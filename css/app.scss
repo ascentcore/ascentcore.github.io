@@ -1,6 +1,12 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+---
+---
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
+
+/* Reset CSS
 */
 
 html, body, div, span, applet, object, iframe,
@@ -21,6 +27,7 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
+  box-sizing: border-box;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -48,6 +55,360 @@ table {
 }
 
 
+/* Site CSS */
+
+body {
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  font-size: 15px;
+  color: #444;
+}
+
+h2 {
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  max-width: 40vw;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4.4em;
+  text-transform: none;
+  line-height: 1.1;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #444;
+}
+
+h2.light {
+  color: #f5f5f5;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.desc {
+  position: relative;
+  z-index: 1;
+  padding-top: 40px;
+}
+
+.image {
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.col-1-1 {
+  width: 100%;
+}
+
+.col-1-2 {
+  width: 50%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.col-2-3 {
+  width: 66.6%;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+
+.col-1-3 {
+  width: 33.3%;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+
+button {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  padding: 20px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: transparent;
+  color: #d6d6d6;
+  border: 2px solid #d6d6d6;
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+button:hover {
+  background: #403d9b;
+  color: #fff;
+}
+
 section {
-  height: 100vh;
+  position: relative;
+  min-height: 100vh;
+  padding: 120px;
+}
+
+.flex {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.logo {
+  position: fixed;
+  z-index: 3;
+  width: 80px;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  padding: 18px;
+  background: #f34e35;
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 100%;
+}
+
+/* Intro section */
+
+.intro {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(207deg, #262554, #403d9b);
+  background-size: 100% 100%;
+
+  .desc {
+    max-width: 720px;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    z-index: 0;
+
+    video {
+      width: 100%;
+      position: absolute;
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .intro .overlay {
+    video {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+
+/* Services section */
+.services {
+  background: linear-gradient(27deg, #f34e35, #403d9b);
+  background-size: 100% 100%;
+
+  .desc {
+    text-align: right;
+    padding-right: 40px;
+
+    p {
+      margin-bottom: 40px;
+    }
+  }
+
+  .image {
+    height: calc(70vh - 70px);
+    width: 40vw;
+    margin-top: 60px;
+    background-image: url(https://images.unsplash.com/photo-1523726491678-bf852e717f6a?auto=format&fi…aWQiOjEyMDd9&ixlib=rb-0.3.5&q=80&s=f2c6bc0…&w=1650);
+    opacity: 0.3;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+  }
+}
+
+/* Process section */
+.process {
+  background: linear-gradient(207deg, #3a3956, #403d9b, #7673b5);
+  background-size: 100% 100%;
+
+  h2 {
+    text-align: right;
+    padding-right: 40px;
+  }
+
+  .desc {
+    padding-right: 40px;
+
+    p {
+      margin-bottom: 40px;
+    }
+  }
+
+  .image {
+    height: calc(60vh - 70px);
+    width: 45vw;
+    margin-top: 60px;
+    background-image: url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-0.3.5…EyMDd9&s=47d2b1f…&auto=format&fit=crop&w=1650&q=80);
+    opacity: 0.3;
+    position: absolute;
+    top: 20%;
+    left: 12%;
+  }
+}
+
+
+/* Contact section */
+.contact {
+  background: linear-gradient(207deg, #262554, #403d9b);
+  background-size: 100% 100%;
+
+  .image {
+    width: 100%;
+    height: calc(50vh - 40px);
+    background-size: 46%;
+    position: relative;
+    overflow: hidden;
+    background-image: url("https://scontent-otp1-1.xx.fbcdn.net/v/t31.0-8/10924163_1045127108847891_4534471659318110783_o.jpg?_nc_cat=110&_nc_ht=scontent-otp1-1.xx&oh=dfd3d20d8b82e6dd0649264be8189f34&oe=5D75261A");
+    background-attachment: fixed;
+    margin-bottom: 60px;
+  }
+
+  b {
+    font-weight: bold;
+  }
+}
+
+
+
+@media only screen and (max-width: 1260px) {
+  h2 {
+    font-size: 3.6em;
+  }
+
+  .desc p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 100px;
+  }
+}
+
+
+@media only screen and (max-width: 1090px) {
+  h2 {
+    max-width: none;
+    margin-bottom: 30px;
+    text-align: left !important;
+  }
+
+  p {
+    font-weight: 400;
+  }
+
+  .intro h2 {
+    margin-bottom: 0;
+  }
+
+  .services .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .desc {
+    text-align: left !important;
+  }
+
+  .services button, .process button {
+    display: none;
+  }
+
+  section {
+    padding: 90px;
+  }
+
+  .col-1-2 {
+    padding: 0 15px;
+  }
+
+  section {
+    min-height: auto;
+  }
+
+  .contact .image {
+    background-size: 100%;
+  }
+
+  .col-1-2, .col-2-3 {
+    padding: 0;
+    width: 100%;
+  }
+
+  .process .image, .services .image {
+    width: 60vw;
+  }
+}
+
+
+@media only screen and (max-width: 828px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+    padding: 13px;
+  }
+
+  h2 {
+    max-width: 100vw;
+    font-size: 3.2em;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .contact .image {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 2.8em !important;
+    max-width: none !important;
+    margin-top: 40px !important;
+  }
+
+  section {
+    padding: 40px;
+  }
+}
+
+
+
+@media only screen and (max-width: 520px) {
+  section {
+    padding: 50px 25px;
+  }
 }
