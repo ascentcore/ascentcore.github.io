@@ -7,8 +7,24 @@ excerpt: This is the greatest website on earth. Share! Like! Subscribe! I'm dead
 <!-- fulltitle: This overrides the default page title, which is "{{page.tite}} | {{site.title}}" -->
 <!-- excerpt: If this isn't set, it'll pull your {{site.tagline}} for meta description-->
 
+
 <div class="logo">
   <img src="assets/static/logo.svg" alt="logo" />
+</div>
+
+<div class="sidebar">
+  <h1>ascentcore</h1>
+  <div class="inner">
+    <div>
+      <div class="col">
+        <span onclick="scrollToSection('contact')">Contact</span>
+        <span onclick="scrollToSection('process')">Process</span>
+        <span onclick="scrollToSection('services')">Services</span>
+        <span onclick="scrollToSection('showcase')">Showcase</span>
+      </div>
+    </div>
+  </div>
+  <div class="line"></div>
 </div>
 
 <section class="intro">
@@ -18,7 +34,7 @@ excerpt: This is the greatest website on earth. Share! Like! Subscribe! I'm dead
       <p>When you outsource product development with AscentCore, you don’t have to compromise quality, scalability, or time-to-market. We build world-class digital products, delivered fast, for better value.</p>
     </div>
   </div>
-  <button>Get started</button>
+  <button onclick="scrollToSection('showcase')">Get started</button>
   <div class="overlay">
     <video autoplay muted loop class="bg-video">
       <source src="assets/static/intro.mp4" type="video/mp4">
@@ -26,7 +42,22 @@ excerpt: This is the greatest website on earth. Share! Like! Subscribe! I'm dead
   </div>
 </section>
 
-<section class="services">
+<section class="showcase" id="showcase">
+  <div class="flex">
+    <div class="col-1-2 showcase-left">
+      <h2 class="light">Showcase</h2>
+      <div class="desc">
+        <p>Realtime Visualization on Attack Prediction <br />using Pre-Trained Neural Net.</p>
+      </div>
+      <a class="button" href="/pages/showcase.html">See Visualization</a>
+    </div>
+    <div class="col-1-2">
+      <img src="assets/static/showcase_thumb-1.png" alt="showcase 1" />
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
   <div class="flex">
     <div class="col-1-2">
       <div class="desc">
@@ -48,7 +79,7 @@ excerpt: This is the greatest website on earth. Share! Like! Subscribe! I'm dead
   <div class="image"></div>
 </section>
 
-<section class="process">
+<section class="process" id="process">
   <div class="flex">
     <div class="col-1-2">
       <h2 class="light">World-class software development</h2>
@@ -69,10 +100,10 @@ excerpt: This is the greatest website on earth. Share! Like! Subscribe! I'm dead
   <div class="image"></div>
 </section>
 
-<section class="contact">
+<section class="contact" id="contact">
   <div class="flex">
     <div class="col-1-2">
-      <h2 class="light">Contact us for more information</h2>
+      <h2 class="light">Contact us for more info</h2>
     </div>
     <div class="col-1-2">
       <div class="image">
@@ -84,3 +115,13 @@ excerpt: This is the greatest website on earth. Share! Like! Subscribe! I'm dead
     </div>
   </div>
 </section>
+
+<!-- Navigation -->
+<script>
+  function scrollToSection(id) {
+    console.log(document.getElementById(id));
+    document.getElementById(id).scrollIntoView({
+        behavior: 'smooth'
+    })
+  }
+</script>
