@@ -2,8 +2,9 @@
 ---
 
 /* Font imports */
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700');
+
 
 
 /* Reset CSS
@@ -58,9 +59,10 @@ table {
 /* Site CSS */
 
 body {
-  font-family: 'Lato', sans-serif;
+  //font-family: 'Lato', sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
   width: 100%;
-  font-size: 15px;
+  font-size: 18px;
   color: #444;
 }
 
@@ -71,10 +73,10 @@ h2 {
   margin: 0;
   max-width: 40vw;
   font-family: 'Montserrat', sans-serif;
-  font-size: 4.4em;
+  font-size: 4.0em;
   text-transform: none;
   line-height: 1.1;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 30px;
   color: #444;
 }
@@ -84,15 +86,16 @@ h2.light {
 }
 
 h3 {
+  //font-family: 'Montserrat', sans-serif;
   margin-top: 0;
   margin-bottom: 20px;
   color: #f5f5f5;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #fff;
   line-height: 1.8;
   font-weight: 300;
@@ -131,8 +134,12 @@ p {
   box-sizing: border-box;
 }
 
-button {
+button, .button {
   position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
   z-index: 1;
   cursor: pointer;
   padding: 20px 60px;
@@ -180,6 +187,108 @@ section {
 
 .logo img {
   width: 100%;
+}
+
+/* Sidebar */
+
+.sidebar {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  width: 80px;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+  opacity: 0.85;
+}
+
+.sidebar .inner {
+  position: absolute;
+  top: 230px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 270px);
+}
+
+.sidebar .inner > div {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: calc(100vh - 270px);
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-100%);
+}
+
+h1 {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  margin: 0;
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-100%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: #fff;
+  /*color: #33326d;*/
+}
+
+.sidebar .col {
+  width: 100%;
+  flex-basis: 100%;
+  padding-top: 30px;
+}
+
+.sidebar .col span {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 40px 25px 0;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.col a:hover {
+  color: #999;
+}
+
+.line {
+  height: calc(100% - 80px);
+  background: #d4d3d3;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+.line:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  background: #fff;
+  height: 210px;
+}
+
+.line:after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #ffffff45;
+  width: 1px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
 }
 
 /* Intro section */
@@ -276,6 +385,74 @@ section {
   }
 }
 
+/* Showcase section & page */
+
+.showcase {
+  background: linear-gradient(207deg, #262554, #403d9b);
+  background-size: 100% 100%;
+  text-align: right;
+
+  .showcase-left {
+    padding-right: 60px;
+  }
+
+  img {
+    width: 100%;
+    margin-top: 30px;
+    opacity: 0.7;
+  }
+}
+
+.showcase-container {
+  background: #f5f5f5;
+
+  .logo {
+    right: 0;
+    left: auto;
+  }
+
+  section {
+    min-height: 100vh;
+    padding: 90px;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+
+    .button {
+      color: #444;
+    }
+
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      color: #444;
+      margin-top: 30px;
+      max-width: 640px;
+    }
+
+    h2, p {
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  h3 {
+    display: none;
+  }
+
+  p {
+    display: none;
+  }
+}
+
 
 /* Contact section */
 .contact {
@@ -345,6 +522,10 @@ section {
     display: none;
   }
 
+  .showcase {
+    text-align: left;
+  }
+
   section {
     padding: 90px;
   }
@@ -373,6 +554,11 @@ section {
 
 
 @media only screen and (max-width: 828px) {
+
+  .contact {
+    padding-bottom: 120px;
+  }
+
   .logo {
     width: 60px;
     height: 60px;
