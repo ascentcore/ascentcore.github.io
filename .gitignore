@@ -2,3 +2,7 @@
 .DS_Store
 _site
 .Gemfile.lock
+.sass-cache
+Gemfile.lock
+_drafts
+.jsbeautifyrc
