@@ -1,0 +1,83 @@
+body {
+  //font-family: 'Lato', sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
+  width: 100%;
+  font-size: 18px;
+  color: #444;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  padding: 120px;
+}
+
+h2 {
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  max-width: 40vw;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4em;
+  text-transform: none;
+  line-height: 1.1;
+  font-weight: 500;
+  margin-top: 30px;
+  color: #444;
+}
+
+.light {
+  color: #f5f5f5;
+}
+
+h3 {
+  //font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.desc {
+  position: relative;
+  z-index: 1;
+  padding-top: 40px;
+}
+
+.image {
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+button,
+.button {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  z-index: 1;
+  cursor: pointer;
+  padding: 20px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: transparent;
+  color: #d6d6d6;
+  border: 2px solid #d6d6d6;
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+button:hover {
+  background: #403d9b;
+  color: #fff;
+}
