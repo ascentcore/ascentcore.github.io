@@ -1,0 +1,31 @@
+<svg width="156" height="91" viewBox="0 0 156 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+    rect, line, path, circle {
+        stroke: #FFF;
+    }
+</style>
+<rect x="1" y="1" width="120" height="84" rx="3" stroke="black" stroke-width="2"/>
+<rect x="125" y="39" width="30" height="51" rx="3" stroke="black" stroke-width="2"/>
+<rect x="7" y="9" width="106" height="10" stroke="black" stroke-width="2"/>
+<rect x="128" y="44" width="24" height="10" stroke="black" stroke-width="2"/>
+<rect x="128" y="59" width="24" height="26" stroke="black" stroke-width="2"/>
+<rect x="7" y="26" width="31" height="43" stroke="black" stroke-width="2"/>
+<rect x="44" y="26" width="31" height="43" stroke="black" stroke-width="2"/>
+<rect x="82" y="26" width="31" height="43" stroke="black" stroke-width="2"/>
+<line y1="76" x2="122" y2="76" stroke="black" stroke-width="2"/>
+<circle cx="22.5" cy="40.5" r="9.5" stroke="black" stroke-width="2"/>
+<circle cx="59.5" cy="40.5" r="9.5" stroke="black" stroke-width="2"/>
+<circle cx="97.5" cy="40.5" r="9.5" stroke="black" stroke-width="2"/>
+<circle cx="135" cy="67" r="4" stroke="black" stroke-width="2"/>
+<line x1="12" y1="54" x2="35" y2="54" stroke="black" stroke-width="2"/>
+<line x1="12" y1="59" x2="35" y2="59" stroke="black" stroke-width="2"/>
+<line x1="12" y1="64" x2="35" y2="64" stroke="black" stroke-width="2"/>
+<line x1="49" y1="54" x2="72" y2="54" stroke="black" stroke-width="2"/>
+<line x1="49" y1="59" x2="72" y2="59" stroke="black" stroke-width="2"/>
+<line x1="49" y1="64" x2="72" y2="64" stroke="black" stroke-width="2"/>
+<line x1="131" y1="77" x2="149" y2="77" stroke="black" stroke-width="2"/>
+<line x1="131" y1="81" x2="149" y2="81" stroke="black" stroke-width="2"/>
+<path d="M141 63H149M141 68H149M141 73H149" stroke="black" stroke-width="2"/>
+<line x1="86" y1="59" x2="109" y2="59" stroke="black" stroke-width="2"/>
+<line x1="86" y1="64" x2="109" y2="64" stroke="black" stroke-width="2"/>
+</svg>

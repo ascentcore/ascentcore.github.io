@@ -7,15 +7,16 @@ sitemap: false
 
 @import "reset";
 @import "general";
-@import "sidebar";
+// @import "sidebar";
 @import "logo";
-@import "cols";
-@import "media";
+// @import "cols";
+// @import "media";
 
+@import "cards";
 @import "intro";
 @import "showcase";
-@import "services";
-@import "process";
+// @import "services";
+// @import "process";
 @import "contact";
 
 
