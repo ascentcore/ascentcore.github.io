@@ -1,8 +1,9 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 100%;
   font: 400 16px/1.5 "Roboto", sans-serif;
   color: #444;
+  background-color: #FFF;
 }
 
 section {
@@ -10,7 +11,7 @@ section {
   display: block;
   // min-height: 100vh;
   padding: 120px;
-  color: #FFF;
+  color: #fff;
 
   @media only screen and (max-width: 920px) {
     padding: 40px 20px;
@@ -18,8 +19,8 @@ section {
     h2 {
       font-size: 2em !important;
     }
+    
   }
-  
 
   h2 {
     font-size: 4em;
