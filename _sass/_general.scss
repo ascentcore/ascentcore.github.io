@@ -1,35 +1,28 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   width: 100%;
-  font: 400 16px/1.5 "Roboto", sans-serif;
+  font: 400 16px/1.5 "Lato", sans-serif;
   color: #444;
   background-color: #FFF;
+}
+
+.main-container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+svg {
+  margin: 0 auto;
 }
 
 section {
   position: relative;
   display: block;
-  // min-height: 100vh;
   padding: 120px;
   color: #fff;
 
   @media only screen and (max-width: 920px) {
     padding: 40px 20px;
-
-    h2 {
-      font-size: 2em !important;
-    }
-    
-  }
-
-  h2 {
-    font-size: 4em;
-    margin-bottom: 1em;
-  }
-
-  p {
-    font-size: 1.2em;
-    line-height: 1.3em;
   }
 }
 
