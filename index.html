@@ -1,204 +1,124 @@
 ---
 layout: default
 title: "Home Page"
-fulltitle: "AscentCore Website"
+fulltitle: "AscentCore Website" 
 excerpt: Best quality. No trade-offs.
 ---
 
-<script src="assets/js/doodle.min.js"></script>
+<div class="logo">
+  <img src="assets/static/logo.svg" alt="logo" />
+</div>
+
+<div class="sidebar">
+  <h1>ascentcore</h1>
+  <div class="inner">
+    <div>
+      <div class="col">
+        <span onclick="scrollToSection('contact')">Contact</span>
+        <span onclick="scrollToSection('process')">Process</span>
+        <span onclick="scrollToSection('services')">Services</span>
+        <span onclick="scrollToSection('showcase')">Showcase</span>
+      </div>
+    </div>
+  </div>
+  <div class="line"></div>
+</div>
+
 <section class="intro">
-  <div class="main-container">
-    <div class="row">
-      <div class="col-12">
-        <div><img src="assets/static/logo-orange.svg" alt="logo" /></div>
-        <h1 class="bottom-bordered">Better quality. No trade-offs.</h1>
-        <p>
-          When you outsource product development with AscentCore, you don’t have
-          to compromise quality, scalability, or time-to-market. We build
-          world-class digital products, delivered fast, for better value.
-        </p>
-      </div>
+  <h2 class="light">Better quality. <br/>No trade-offs.</h2>
+  <div class="col-2-3">
+    <div class="desc">
+      <p>When you outsource product development with AscentCore, you don’t have to compromise quality, scalability, or time-to-market. We build world-class digital products, delivered fast, for better value.</p>
     </div>
-    <div class="row">
-      <div class="col-12" id="doodle" style="text-align: center"></div>
-      <script>
-        acintro("#doodle", {width: 700, height: 400}).attr("transform", "scale(1.4)translate(0, 60)");
-      </script>
+  </div>
+  <button onclick="scrollToSection('showcase')">Get started</button>
+  <div class="overlay">
+    <video autoplay muted loop class="bg-video">
+      <source src="assets/static/intro.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<section class="showcase" id="showcase">
+  <div class="flex">
+    <div class="col-1-2 showcase-left">
+      <h2 class="light">Showcase</h2>
+      <div class="desc">
+        <p>Realtime Visualization on Attack Prediction <br />using Pre-Trained Neural Net.</p>
+      </div>
+      <a class="button" href="/pages/showcase.html">See Visualization</a>
+    </div>
+    <div class="col-1-2">
+      <img src="assets/static/showcase_thumb-1.png" alt="showcase 1" />
     </div>
   </div>
 </section>
 
-<section class="services">
-  <div class="main-container">
-    <div class="row cards">
-      <div class="col-12">
-        <div class="col-2 col-lg-4 col-md-6 col-xs-12">
-          <div class="card">
-            <div class="card-image" id="developmentCard"></div>
-            <script>
-              acintro("#developmentCard", {
-                component: "constructDev",
-                x: 80,
-                y: 30,
-                width: 95,
-                height: 100
-              }).attr("transform", "scale(2)");
-            </script>
-            <div class="card-title">Software Development</div>
-            <div class="card-body">
-              We help our partners deliver custom software in time, with no
-              trade-offs by handling software projects from concept to delivery.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-2 col-lg-4 col-md-6 col-xs-12">
-          <div class="card">
-            <div class="card-image" id="qaCard"></div>
-            <script>
-              acintro("#qaCard", {
-                component: "constructQA",
-                x: 90,
-                y: 30,
-                width: 110,
-                height: 100,
-                interval: 2000
-              }).attr("transform", "scale(2.3)");
-            </script>
-            <div class="card-title">Quality assurance</div>
-            <div class="card-body">
-              We provide top-class software testing by working close along
-              developers and product managers to understand and test all
-              requirements.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-2 col-lg-4 col-md-6 col-xs-12">
-          <div class="card">
-            <div class="card-image" id="uiCard"></div>
-            <script>
-              acintro("#uiCard", {
-                component: "constructClient",
-                x: 90,
-                y: 30,
-                width: 100,
-                height: 90
-              }).attr("transform", "scale(2.8)");
-            </script>
-            <div class="card-title">UI/UX Design</div>
-
-            <div class="card-body">
-              We enable teams to work collaboratively by abiding to Lean UX
-              practices. We build products with you.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-2 col-lg-4 col-md-6 col-xs-12">
-          <div class="card">
-            <div class="card-image" id="devopsCard"></div>
-            <script>
-              acintro("#devopsCard", {
-                component: "constructDevOPS",
-                x: 90,
-                y: 30,
-                width: 120,
-                height: 100,
-                interval: 3000
-              }).attr("transform", "scale(2.5)");
-            </script>
-            <div class="card-title">DevOps</div>
-            <div class="card-body">
-              We shorten the systems development life cycle while also
-              delivering features, fixes, and updates frequently in close
-              alignment with business objectives.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-2 col-lg-4 col-md-6 col-xs-12">
-          <div class="card">
-              <div class="card-image" id="visCard"></div>
-              <script>
-                acintro("#visCard", {
-                  component: "constructVisualization",
-                  x: 90,
-                  y: 30,
-                  width: 100,
-                  height: 100
-                }).attr("transform", "scale(2)");
-              </script>
-            <div class="card-title">Data Visualization</div>
-            <div class="card-body">
-              We are able to get the most out of your data in the least amount
-              of space by creating custom built interactive visualzations.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-2 col-lg-4 col-md-6 col-xs-12">
-          <div class="card">
-              <div class="card-image" id="mlCard"></div>
-              <script>
-                acintro("#mlCard", {
-                  component: "constructML",
-                  x: 90,
-                  y: 30,
-                  width: 100,
-                  height: 100,
-                  interval: 1500
-                }).attr("transform", "scale(2)");
-              </script>
-            <div class="card-title">Machine Learning</div>
-            <div class="card-body">
-              We are able to increase your business using Data Science,
-              Statistics, AI and ML algorithms and in house built models.
-            </div>
-          </div>
-        </div>
+<section class="services" id="services">
+  <div class="flex">
+    <div class="col-1-2">
+      <div class="desc">
+        <h3>Software development</h3>
+        <p>We help our partners deliver custom software in time, with no trade-offs by handling software projects from concept to delivery.</p>
+        <h3>Quality assurance</h3>
+        <p>We provide top-class software testing by working close along developers and product managers to understand and test all requirements.</p>
+        <h3>UI/UX Design</h3>
+        <p>We enable teams to work collaboratively by abiding to Lean UX practices. We build products with you.</p>
+        <h3>DevOps</h3>
+        <p>We shorten the systems development life cycle while also delivering features, fixes, and updates frequently in close alignment with business objectives.</p>
       </div>
     </div>
+    <div class="col-1-2">
+      <h2 class="light">From concept to product and beyond</h2>
+      <!-- <button>See how we do it</button> -->
+    </div>
   </div>
+  <div class="image"></div>
 </section>
 
-<section class="showcase">
-  <div class="main-container">
-    <h2>Case Studies</h2>
-    <div class="row">
-      <div class="col-2 col-lg-4 col-md-6 col-xs-12">
-        <div class="card">
-          <div class="card-image no-border white">
-            <img class="full-height" src="assets/static/showcase_thumb-1.png" />
-          </div>
-          <div class="card-title">
-            Realtime analisys of network packages using ML
-          </div>
-          <div class="card-body">
-            The case study is used to represent how real time network packet
-            information can be ran through a neural net to identify potential
-            threats.<br />
-            <a href="/pages/showcase.html">See Visualization</a>
-          </div>
-        </div>
+<section class="process" id="process">
+  <div class="flex">
+    <div class="col-1-2">
+      <h2 class="light">World-class software development</h2>
+    </div>
+    <div class="col-1-2">
+      <div class="desc">
+        <h3>Integrated development model</h3>
+        <p>We strive to create partnerships and implement software with integrated teams.</p>
+        <h3>Agile methodology</h3>
+        <p>Customer satisfaction by rapid, continuous delivery of useful software, built with collaboration in mind, from concept to production.</p>
+        <h3>Outcome-based approach</h3>
+        <p>Clearly stated results for the people and organisations who are supposed to benefit. We create cultures of accountability.</p>
+        <h3>Holistic service</h3>
+        <p>We have experts who have decades of real-world hands-on experience of implementing software architectures and design patterns in a wide variety of software projects.</p>
       </div>
     </div>
   </div>
+  <div class="image"></div>
 </section>
 
 <section class="contact" id="contact">
-  <div class="main-container">
-    <div class="row">
-      <div class="col-md-6 col-xs-12">
-        <h2>Contact us for more info</h2>
-        <p><b>contact@ascentcore.com</b></p>
-        <br />
-        <p>Bd. 21 Decembrie 1989, nr. 77</p>
-        <p>4th floor, Building E, Cluj-Napoca, Romania</p>
+  <div class="flex">
+    <div class="col-1-2">
+      <h2 class="light">Contact us for more info</h2>
+    </div>
+    <div class="col-1-2">
+      <div class="image">
       </div>
-      <div class="col-md-6 col-xs-12">
-        <img src="/assets/svg/contact.svg" />
-      </div>
+      <p><b>contact@ascentcore.com</b></p>
+      <br/><br/>
+      <p>Bd. 21 Decembrie 1989, nr. 77</p>
+      <p>4th floor, Building E, Cluj-Napoca</p>
     </div>
   </div>
 </section>
+
+<!-- Navigation -->
+<script>
+  function scrollToSection(id) {
+    console.log(document.getElementById(id));
+    document.getElementById(id).scrollIntoView({
+        behavior: 'smooth'
+    })
+  }
+</script>
