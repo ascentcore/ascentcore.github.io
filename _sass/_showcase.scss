@@ -17,10 +17,16 @@
   
   .showcase-container {
     background: #f5f5f5;
+    margin-top: 20px;
   
     .logo {
       right: 0;
       left: auto;
+    }
+
+    .button {
+      border-color: #262554;
+      color: #262554;
     }
   
     section {
