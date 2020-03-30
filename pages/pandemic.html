@@ -2,6 +2,7 @@
 layout: showcase-pandemic
 title: "Pandemic Simulator"
 ---
+
 <div class="container">
   <div class="columns">
     <div class="column col-2 col-sm-12 col-lg-4 col-xl-3">
@@ -57,10 +58,14 @@ title: "Pandemic Simulator"
     <div class="column col-10 col-sm-12 col-lg-8  col-xl-9">
       <div class="card">
         <div class="card-header" id="header">
-          <span class="h4">Simulation: </span>
+          <span>Simulation: </span>
           <button class="btn btn-small" id="slower">Slower</button>
           <button class="btn btn-small" id="stop">Pause</button>
           <button class="btn btn-small" id="faster">Faster</button>
+          <span style="display: inline-block; width: 50px"></span>
+          <span id="frameskip">Frameskip (0): </span>
+          <button class="btn btn-small" id="fsinc">Increase</button>
+          <button class="btn btn-small" id="fsdec">Decrease</button>
 
           <a href="/" class="btn btn-small btn-error" style="float: right">Back To Homepage</a>
         </div>
@@ -71,7 +76,8 @@ title: "Pandemic Simulator"
       <div class="card">
         <div class="card-header" id="header">
           <h5>Pandemic Simulator</h5>
-          <p>The simulator was develped in order to better understand the social distancing and isolation effects on the
+          <p>The simulator was develped in order to better understand the social distancing and isolation effects on
+            the
             development of the pandemic</p>
         </div>
         <div class="card-body columns">
@@ -98,7 +104,8 @@ title: "Pandemic Simulator"
                 6:00 +/- 4h and lasts for 8 hours</li>
               <li<b>Commercial Areas</b> - number of places for people to work in</li>
                 <li><b>Social Areas</b> - number of places for people to go and socialize</li>
-                <li><b>Visit probability</b> - the probability of an individual to go and visit another one in its house
+                <li><b>Visit probability</b> - the probability of an individual to go and visit another one in its
+                  house
                 </li>
                 <li><b>Social Probability</b>- the probability of an individual to go and socialize in a public space
                 </li>
