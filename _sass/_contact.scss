@@ -6,10 +6,12 @@
       width: 100%;
       height: calc(50vh - 40px);
       background-size: 46%;
+      // background-size: contain;
       position: relative;
       overflow: hidden;
       background-image: url(/assets/static/office.png);
       background-attachment: fixed;
+      background-position: 0;
       margin-bottom: 60px;
     }
   

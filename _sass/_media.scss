@@ -123,6 +123,28 @@
       max-width: none !important;
       margin-top: 40px !important;
     }
+
+    .contact {
+      .image {
+        background-repeat: no-repeat;
+        background-size: contain !important;
+      }
+    }
+
+    .showcase {
+      .col-1-3 {        
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 20px;
+        
+        .button {
+          width: 100%;
+          padding: 20px;
+          text-align: center;
+          margin-top: 10px;
+        }
+      }
+    }
   
     section {
       padding: 40px;
