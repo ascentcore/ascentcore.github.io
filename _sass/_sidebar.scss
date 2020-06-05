@@ -1,15 +1,14 @@
-/* Sidebar */
-$width: 80px;
+
 
 .sidebar {
   position: fixed;
   z-index: 1;
-  right: 0;
-  width: $width;
-  height: 100%;
   top: 0;
+  right: 0;
+  width: $sidebar-width;
+  height: 100%;  
   overflow: hidden;
-  opacity: 0.85;
+  opacity: $sidebar-opacity;
 
   h1 {
     position: absolute;
@@ -23,34 +22,34 @@ $width: 80px;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: bold;
-    color: #fff;
-    /*color: #33326d;*/
+    color: $sidebar-text-color
   }
 
   .col {
     width: 100%;
     flex-basis: 100%;
-    padding-top: 30px;
-
-    a:hover {
-      color: #999;
-    }
+    padding-top: $sidebar-padding;
 
     span {
+      color: $sidebar-text-color;
+      font-size: $sidebar-font-size;
       cursor: pointer;
       display: inline-block;
-      margin: 0 40px 25px 0;
-      color: #fff !important;
+      margin: 0 $sidebar-links-spacing 0 0;      
       text-decoration: none;
+
+      &:hover {
+        color: #999;
+      }
     }
   }
 
   .inner {
     position: absolute;
-    top: 230px;
     left: 0;
     width: 100%;
-    height: calc(100% - 270px);
+    top: 230px;
+    // height: calc(100% - 270px);
 
     & > div {
       display: flex;
@@ -86,3 +85,5 @@ $width: 80px;
     width: 1px;
   }
 }
+
+  
