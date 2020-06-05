@@ -1,74 +1,48 @@
 <section class="showcase" id="showcase">
   <div class="container">
     <div class="row">
-      <div class="col-sm">
-        One of three columns
+      <div class="col-12">
+        <h3>Experiments</h3>
       </div>
-      <div class="col-sm">
-        One of three columns
-      </div>
-      <div class="col-sm">
-        One of three columns
-      </div>
-    </div>
-  </div>
-
-  <ul>
-    {% for member in site.data.apps %}
-
-    {% endfor %}
-  </ul>
-  <!-- <div class="flex">
-      <div class="col-1-1">
-        <h2 class="light">Showcase</h2>
-      </div>
-  
-      <div class="posts">
-        {% for post in site.posts %}
-        <article class="post">
-  
-          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-  
-          <div class="entry">
-            {{ post.excerpt }}
+      {% for app in site.data.apps %}
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-image" style='background-image: url("{{app.img}}");'></div>
+          <div class="card-title">
+            <a href="{{app.link}}">{{app.title}}</a>
           </div>
-  
-          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-        </article>
-        {% endfor %}
-      </div>
-      <div class="col-1-3">
-        <img src="assets/static/showcase_thumb-1.png" alt="showcase 1" />
-        <div class="desc">
-          <p>Realtime Visualization on Attack Prediction <br />using Pre-Trained Neural Net.</p>
+
+          <div class="card-description">
+            {{app.description}}
+            <br />
+            <a href="{{app.link}}">Open experiment</a>
+          </div>
         </div>
-        <a class="button" href="/pages/showcase.html">Open</a>
       </div>
-      <div class="col-1-3">
-        <img src="assets/static/showcase_thumb-3.png" alt="showcase 3" />
-        <div class="desc">
-          <p>Pandemic Simulator<br />
-            Part of COVID-19 Research</p>
-        </div>
-        <a class="button" href="/pages/pandemic.html">Open</a>
+      {% endfor %}
+    </div>
+
+
+    <div class="row">
+      <div class="col-12">
+        <h3>Posts</h3>
       </div>
-      <div class="col-1-3">
-        <img src="assets/static/showcase_thumb-2.png" alt="showcase 2" />
-        <div class="desc">
-          <p>Evolution of COVID-19 epidemic over time<br />
-            Part of COVID-19 Research</p>
+      {% for post in site.posts %}
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-image" style='background-image: url("{{post.img}}");'></div>
+          <div class="card-title">
+            <a href="{{post.url}}">{{post.title}}</a>
+          </div>
+
+          <div class="card-description">
+            {{post.description}}
+            <br />
+            <a href="{{post.url}}">Open post</a>
+          </div>
         </div>
-        <a class="button" href="/pages/covid-19.html">Open</a>
-      </div> -->
-  <!-- <div class="col-1-2 showcase-left">
-        <h2 class="light">Showcase</h2>
-        <div class="desc">
-          <p>Realtime Visualization on Attack Prediction <br />using Pre-Trained Neural Net.</p>
-        </div>
-        <a class="button" href="/pages/showcase.html">Open</a>
       </div>
-      <div class="col-1-2">
-        <img src="assets/static/showcase_thumb-1.png" alt="showcase 1" />
-      </div> -->
+      {% endfor %}
+    </div>
   </div>
 </section>

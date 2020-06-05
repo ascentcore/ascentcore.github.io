@@ -1,8 +1,9 @@
-- name: Eric Mill
-  github: konklone
+- title: Realtime Attack Prediction
+  description: Realtime attack prediction based on packet analysis using pre trained neural net
+  img: assets/static/showcase_thumb-1.png
+  link: /pages/showcase.html
 
-- name: Parker Moore
-  github: parkr
-
-- name: Liu Fengyun
-  github: liufengyun
+- title: Pandemic Simulator
+  description: Part of COVID-19 Challenge
+  img: assets/static/showcase_thumb-3.png
+  link: /pages/pandemic.html
