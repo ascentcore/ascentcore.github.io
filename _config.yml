@@ -11,6 +11,14 @@ version: 0.0.1
 github: ascentcore
 #instagram: igusername
 
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class   : 'syntax'
+
 # Contact
 #phone: "916-276-1044" # This is my real number. You should text me.
 email: "contact@ascentcore.com" # This is my real email address. Please don't email me.

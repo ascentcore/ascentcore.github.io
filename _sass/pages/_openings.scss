@@ -1,0 +1,26 @@
+.openings {
+  background: linear-gradient(27deg, $openings-color-1, $openings-color-2);
+  background-size: 100% 100%;
+  color: $openings-font-color;
+
+  .card {
+    .card-title, .card-title a {
+      color: $openings-font-color;
+    }
+    .card-description {
+      color: $openings-font-color;
+    }
+  }
+
+  .image {
+    height: calc(70vh - 70px);
+    width: 30vw;
+    margin-top: 0px;
+    background-image: url(/assets/static/openings.jpg);
+    opacity: 0.3;
+    background-size: contain;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+  }
+}

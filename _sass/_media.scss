@@ -1,3 +1,9 @@
+@media only screen and (min-width: 992px) {
+    section {
+        padding: $section-padding;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .sidebar {
         display: none;
@@ -5,6 +11,10 @@
 
     section {
         padding: $section-padding-medium;
+
+        h2 {
+            font-size: $section-h2-font-size-tablet;
+        }
     }
 }
 
@@ -21,7 +31,7 @@
         h2 {
             font-size: $section-h2-font-size-tablet;
         }
-    }
+    }   
 }
 
 @media only screen and (max-width: 576px) {
@@ -32,4 +42,6 @@
     button {
         width: 100%;
     }
+
+    
 }

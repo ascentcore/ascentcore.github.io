@@ -6,11 +6,11 @@ $sidebar-links-spacing: 30px;
 $sidebar-font-size: 16px;
 $sidebar-text-color: #ffffff;
 
-$section-padding: 120px;
+$section-padding: 60px;
 $section-padding-medium: $section-padding - 20;
-$section-padding-small: $section-padding-medium - 40;
+$section-padding-small: $section-padding-medium - 10;
 $section-padding-tablet: $section-padding-small;
-$section-padding-mobile: $section-padding-small - 40;
+$section-padding-mobile: $section-padding-small - 10;
 
 $section-color: #FFFFFF;
 $section-h2-font-weight: 500;
@@ -22,5 +22,21 @@ $section-h2-margin-top: 30px;
 $section-h3-font-size: 3em;
 $section-h4-font-size: 2em;
 
+$orange-color: #f34e35;
 $button-color: #d6d6d6;
-$color-faded: rgb(200, 200, 200);
+$color-faded: rgb(220, 220, 220);
+
+$card-height: 440px;
+
+
+
+
+$showcase-color-1: #262554;
+$showcase-color-2: #403d9b;
+
+// $openings-color-1: #254099;
+// $openings-color-2: #403d9b;
+
+$openings-color-2: #505050;
+$openings-color-1: #403d9b;
+$openings-font-color: #fff;

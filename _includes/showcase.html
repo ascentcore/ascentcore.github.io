@@ -7,7 +7,7 @@
       {% for app in site.data.apps %}
       <div class="col-xs-12 col-sm-6 col-lg-4">
         <div class="card">
-          <div class="card-image" style='background-image: url("{{app.img}}");'></div>
+          <a href="{{app.link}}" class="card-image" style='background-image: url("{{app.img}}");'></a>
           <div class="card-title">
             <a href="{{app.link}}">{{app.title}}</a>
           </div>
@@ -30,7 +30,7 @@
       {% for post in site.posts %}
       <div class="col-xs-12 col-sm-6 col-lg-4">
         <div class="card">
-          <div class="card-image" style='background-image: url("{{post.img}}");'></div>
+          <a href="{{post.url}}" class="card-image" style='background-image: url("{{post.img}}");'></a>
           <div class="card-title">
             <a href="{{post.url}}">{{post.title}}</a>
           </div>

@@ -1,0 +1,19 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 18L28 9" stroke="#F34E35" stroke-width="3"/>
+<path d="M50.3077 27.8718L28 9" stroke="#F34E35" stroke-width="3"/>
+<path d="M7 37L28 21" stroke="#F34E35" stroke-width="3"/>
+<path d="M7 18L28 21" stroke="#F34E35" stroke-width="3"/>
+<path d="M50.3077 27.8718L28 21" stroke="#F34E35" stroke-width="3"/>
+<path d="M7 37L28 35" stroke="#F34E35" stroke-width="3"/>
+<path d="M5 18L28.8462 35.4102" stroke="#F34E35" stroke-width="3"/>
+<path d="M50.3077 27.8718L28 35" stroke="#F34E35" stroke-width="3"/>
+<path d="M7 37L28 48" stroke="#F34E35" stroke-width="3"/>
+<path d="M50.3077 27.8718L28 48" stroke="#F34E35" stroke-width="3"/>
+<circle cx="53" cy="28" r="4" fill="white"/>
+<circle cx="28" cy="21" r="4" fill="white"/>
+<circle cx="28" cy="35" r="4" fill="white"/>
+<circle cx="28" cy="9" r="4" fill="white"/>
+<circle cx="7" cy="18" r="4" fill="white"/>
+<circle cx="7" cy="37" r="4" fill="white"/>
+<circle cx="28" cy="48" r="4" fill="white"/>
+</svg>

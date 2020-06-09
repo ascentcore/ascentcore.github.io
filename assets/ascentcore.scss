@@ -11,8 +11,12 @@ sitemap: false
 @import "sidebar";
 @import "logo";
 
+@import "blog/content";
+@import "blog/code";
+
 @import "pages/intro";
 @import "pages/showcase";
 @import "pages/services";
 @import "pages/process";
-
+@import "pages/openings";
+@import "pages/contact";

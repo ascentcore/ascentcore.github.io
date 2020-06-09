@@ -1,0 +1,22 @@
+<section class="openings" id="openings">
+  <div class="image" ></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3>Openings</h3>
+      </div>
+      {% for app in site.data.openings %}
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-title">
+            <a href="{{app.link}}">{{app.title}}</a>
+          </div>
+          <div class="card-description">
+            {{app.description}}            
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

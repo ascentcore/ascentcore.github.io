@@ -9,7 +9,6 @@ body {
 section {
   position: relative;
   min-height: 100vh;
-  padding: $section-padding;
   color: $section-color;
 
   .image {
@@ -73,16 +72,19 @@ button:hover {
   max-width: 300px;
   margin: 0 auto;
   margin-top: 20px;
-  height: 500px;
-  // border: 1px solid #ffffff;
-  // background-color: rgba(255,255,255,0.9);
+  height: $card-height;
   border-radius: 2px;
   color: #fff;
-  // padding-top: 80px;
 
   &:hover {
-    .card-image img {
+    .card-image  {
       opacity: 1;
+    }
+
+    .card-description {
+      a {
+        color: $orange-color;
+      }
     }
   }
 
@@ -121,4 +123,8 @@ button:hover {
   .card-actions {
     text-align: center;
   }
+}
+
+.text-center {
+  text-align: center;
 }
