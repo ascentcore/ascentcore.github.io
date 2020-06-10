@@ -71,13 +71,13 @@ button:hover {
   position: relative;
   max-width: 300px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
   height: $card-height;
   border-radius: 2px;
   color: #fff;
 
   &:hover {
-    .card-image  {
+    .card-image {
       opacity: 1;
     }
 
@@ -109,10 +109,31 @@ button:hover {
     }
   }
 
+  &:hover {
+    .card-title {
+      &:after {
+        border-color: $orange-color;
+        width: 80%;
+      }
+    }
+  }
+
   .card-title {
+    position: relative;
     text-align: left;
     font-size: 1.5em;
     margin: 0 0 20px;
+
+    &:after {
+      content: " ";
+      transition: all 200ms;
+      position: absolute;
+      display: block;
+      width: 30px;
+      bottom: -10px;
+      left: 0;
+      border-bottom: 1px solid #fff;
+    }
   }
 
   .card-description {
@@ -121,7 +142,8 @@ button:hover {
   }
 
   .card-actions {
-    text-align: center;
+    margin-top: 20px;
+    text-align: left;
   }
 }
 

@@ -1,5 +1,5 @@
 <section class="openings" id="openings">
-  <div class="image" ></div>
+  <div class="image"></div>
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -9,10 +9,17 @@
       <div class="col-xs-12 col-sm-6 col-lg-4">
         <div class="card">
           <div class="card-title">
-            <a href="{{app.link}}">{{app.title}}</a>
+            {{app.title}}
           </div>
           <div class="card-description">
-            {{app.description}}            
+            <ul>
+              {% for desc in app.description %}
+              <li>{{desc}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="card-actions">
+            <a href="https://forms.gle/SwB9XNCaQJ6UUPb36" target="_new">Apply</a>
           </div>
         </div>
       </div>
