@@ -1,48 +1,39 @@
 <section class="showcase" id="showcase">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h3 style="margin-left: 15px;"> <img src="assets/icons/experiments.svg" />Experiments</h3>
-      </div>
-      {% for app in site.data.apps %}
-      <div class="col-xs-12 col-sm-6 col-lg-4">
-        <div class="card">
-          <a href="{{app.link}}" class="card-image" style='background-image: url("{{app.img}}");'></a>
-          <div class="card-title">
-            <a href="{{app.link}}">{{app.title}}</a>
-          </div>
+  <h3>What we do for fun</h3>
 
-          <div class="card-description">
-            {{app.description}}
-            <br />
-            <a href="{{app.link}}">Open experiment</a>
-          </div>
+  <div class="flex">
+    {% for app in site.data.apps %}
+    <div class="card">
+      <a href="{{app.link}}" class="card-image" style='background-image: url("{{app.img}}");'></a>
+      <div class="card-info">
+        <div class="card-title">
+          <a href="{{app.link}}">{{app.title}}</a>
+        </div>
+
+        <div class="card-description">
+          {{app.description}}
+          <br />
+          <a href="{{app.link}}">Open experiment</a>
         </div>
       </div>
-      {% endfor %}
     </div>
+    {% endfor %}
 
+    {% for post in site.posts %}
+    <div class="card">
+      <a href="{{post.url}}" class="card-image" style='background-image: url("{{post.img}}");'></a>
+      <div class="card-info">
+        <div class="card-title">
+          <a href="{{post.url}}">{{post.title}}</a>
+        </div>
 
-    <div class="row">
-      <div class="col-12">
-        <h3 style="margin-left: 15px;"> <img src="assets/icons/posts.svg" />Posts</h3>
-      </div>
-      {% for post in site.posts %}
-      <div class="col-xs-12 col-sm-6 col-lg-4">
-        <div class="card">
-          <a href="{{post.url}}" class="card-image" style='background-image: url("{{post.img}}");'></a>
-          <div class="card-title">
-            <a href="{{post.url}}">{{post.title}}</a>
-          </div>
-
-          <div class="card-description">
-            {{post.description}}
-            <br />
-            <a href="{{post.url}}">Open post</a>
-          </div>
+        <div class="card-description">
+          {{post.description}}
+          <br />
+          <a href="{{post.url}}">Open post</a>
         </div>
       </div>
-      {% endfor %}
     </div>
+    {% endfor %}
   </div>
 </section>

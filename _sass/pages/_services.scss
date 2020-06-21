@@ -1,26 +1,50 @@
 .services {
   background: linear-gradient(27deg, #f34e35, #403d9b);
   background-size: 100% 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  padding-top: 115px;
 
-  h2 {
-    margin: 0;
-    text-align: left;
-  }
+  .item {
+    position: relative;
+    border: 10px solid #bf4a57;
+    margin-right: 60px;
+    margin-bottom: 80px;
+    padding: 30px;
+    width: 28%;
+    box-sizing: border-box;
 
-  p {
-    margin-bottom: 40px;
-    color: $color-faded;
-  }
+    .icon {
+      position: absolute;
+      top: -38px;
+      width: 65px;
+      height: 65px;
+      padding: 15px;
+      box-sizing: border-box;
+      background: linear-gradient(-23deg, #534091, #403d9b);
+      opacity: 0.9;
+      border-radius: 10px;
 
-  .image {
-  
-    height: calc(70vh - 70px);
-    width: 40vw;
-    margin-top: 60px;
-    background-image: url(/assets/static/notebook.jpeg);
-    opacity: 0.3;
-    position: absolute;
-    top: 20%;
-    right: 20%;
+      img {
+        width: 100%;
+      }
+    }
+
+    .title {
+      font-size: 1.45rem;
+      margin-top: 60px;
+      margin-bottom: 30px;
+      color: #fff;
+      opacity: 0.8;
+      border-bottom: 1px dashed;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .description {
+      color: #fff;
+      opacity: 0.8;
+    }
   }
 }

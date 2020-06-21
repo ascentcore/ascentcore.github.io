@@ -3,7 +3,6 @@ body {
   width: 100%;
   font-size: 18px;
   color: #444;
-  text-align: justify;
 }
 
 section {
@@ -38,7 +37,7 @@ section {
 
   p {
     font-size: 1.2rem;
-    line-height: 1.8;
+    line-height: 1.4;
     font-weight: 300;
   }
 }
@@ -64,87 +63,6 @@ button,
 button:hover {
   background: #403d9b;
   color: #fff;
-}
-
-.card {
-  display: block;
-  position: relative;
-  max-width: 300px;
-  margin: 0 auto;
-  margin-top: 40px;
-  height: $card-height;
-  border-radius: 2px;
-  color: #fff;
-
-  &:hover {
-    .card-image {
-      opacity: 1;
-    }
-
-    .card-description {
-      a {
-        color: $orange-color;
-      }
-    }
-  }
-
-  a {
-    display: block;
-    padding-top: 20px;
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .card-image {
-    width: 100%;
-    height: 200px;
-    opacity: 0.5;
-    transition: all 300ms;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  &:hover {
-    .card-title {
-      &:after {
-        border-color: $orange-color;
-        width: 80%;
-      }
-    }
-  }
-
-  .card-title {
-    position: relative;
-    text-align: left;
-    font-size: 1.5em;
-    margin: 0 0 20px;
-
-    &:after {
-      content: " ";
-      transition: all 200ms;
-      position: absolute;
-      display: block;
-      width: 30px;
-      bottom: -10px;
-      left: 0;
-      border-bottom: 1px solid #fff;
-    }
-  }
-
-  .card-description {
-    display: block;
-    color: $color-faded;
-  }
-
-  .card-actions {
-    margin-top: 20px;
-    text-align: left;
-  }
 }
 
 .text-center {
