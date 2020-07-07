@@ -19,7 +19,7 @@
 }
 
 @media only screen and (max-width: 992px) {
-    section {
+    section, #content {
         padding: $section-padding-small;
     }
 }
