@@ -29,3 +29,13 @@ sass:
   style:            :compressed
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+
+authors:
+  sarapopa:
+    name: Sara Popa
+    email: sara.popa@ascentcore.com
+    description: Machine Learning Engineer as part of the Ascentcore Research Lab team
+  corinaadam:
+    name: Corina Adam
+    email: corina.adam@ascentcore.com
+    description: Fullstack engineer as part of the Ascentcore Fontend Development team
