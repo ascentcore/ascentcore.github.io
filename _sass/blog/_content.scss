@@ -1,11 +1,13 @@
 // @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Lora|Playfair+Display:700i,900");
 #content {
 
+  width: 100%;
   max-width: 720px;
   margin: 0 auto;
   padding-top: 40px;
 
   img {
+    width: 100%;
     max-width: 650px;
     margin: 0 auto;
   }
@@ -118,8 +120,14 @@
     background-color: lavender;
   }
 
+  .highlighter-rouge {
+    overflow: auto;
+  }
+
   table {
     // margin: 40px 0;
+    display: block;
+    overflow: auto;
     margin: 40px auto;
 
     td {
