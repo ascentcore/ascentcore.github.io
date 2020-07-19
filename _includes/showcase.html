@@ -1,5 +1,5 @@
 <section class="showcase" id="showcase">
-  <h3>What we do for fun</h3>
+  <h3>Sometimes you need to experiment that's why we lorem ipsum dolor sit amet</h3>
 
   <div class="flex">
     {% for app in site.data.apps %}
@@ -11,9 +11,8 @@
         </div>
 
         <div class="card-description">
-          {{app.description}}
-          <br />
-          <a href="{{app.link}}">Open experiment</a>
+          <p>{{app.description}}</p>
+<!--          <a class="button" href="{{app.link}}">Open experiment</a>-->
         </div>
       </div>
     </div>
@@ -28,9 +27,8 @@
         </div>
 
         <div class="card-description">
-          {{post.description}}
-          <br />
-          <a href="{{post.url}}">Open post</a>
+          <p>{{post.description}}</p>
+<!--          <a class="button" href="{{post.url}}">Open post</a>-->
         </div>
       </div>
     </div>
