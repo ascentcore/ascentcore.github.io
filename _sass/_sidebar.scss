@@ -1,13 +1,11 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
   z-index: 3;
   height: 80px;
-  background: #f1f1f1;
-  box-shadow: inset 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 
   .logo {
     width: 70px;
@@ -24,10 +22,10 @@
   }
 
   .anim-container {
-    padding-left: 30px;
+    padding-left: 50px;
     overflow: hidden;
     height: 30px;
-    margin-top: 30px;
+    margin-top: 50px;
 
     .anim-inner {
       animation-name: switchtitle;
@@ -41,7 +39,7 @@
       line-height: 1.2;
       position: relative;
       font-weight: bold;
-      color: #484848;
+      color: #fff;
       margin-bottom: 30px;
     }
 
@@ -52,7 +50,7 @@
       text-transform: uppercase;
       letter-spacing: 5px;
       font-weight: bold;
-      color: #f34e35;
+      color: #fff;
     }
 
   }
@@ -64,14 +62,14 @@
   .col {
     width: 100%;
     flex-basis: 100%;
-    padding-top: $sidebar-padding;
+    padding-top: 50px;
 
     span {
-      color: $sidebar-text-color;
       cursor: pointer;
       display: inline-block;
-      margin: 0 $sidebar-links-spacing 0 0;      
+      margin: 0 $sidebar-links-spacing 0 0;
       text-decoration: none;
+      color: #fff;
 
       &:hover {
         color: #999;

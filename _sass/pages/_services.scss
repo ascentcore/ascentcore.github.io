@@ -1,28 +1,23 @@
 .services {
-  background: linear-gradient(27deg, #f34e35, #403d9b);
+  background: linear-gradient(27deg, #403d9b, #403d9b);
   background-size: 100% 100%;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 10px;
-  padding-top: 115px;
 
   .item {
     position: relative;
-    border: 5px solid #bf4a57;
-    margin-right: 30px;
-    margin-bottom: 80px;
-    width: calc(33.33% - 30px);
+    border-right: 1px dashed #5855a2;
+    padding: 80px 30px 260px;
+    width: 20%;
     box-sizing: border-box;
 
+    &:hover {
+      background: #3f3ba0;
+    }
+
     .icon {
-      width: 65px;
-      height: 65px;
-      padding: 15px;
-      margin: 30px;
-      box-sizing: border-box;
-      background: linear-gradient(-23deg, #534091, #403d9b);
-      opacity: 0.9;
-      border-radius: 10px;
+      width: 45px;
+      height: 45px;
 
       img {
         width: 100%;
@@ -30,18 +25,17 @@
     }
 
     .title {
-      font-size: 1.45rem;
+      font-size: 1.4rem;
       margin-top: 30px;
       color: #fff;
-      opacity: 0.8;
-      border-bottom: 5px solid #bf4a57;
-      padding: 30px;
+      opacity: 0.85;
+      margin-bottom: 30px;
     }
 
     .description {
       color: #fff;
-      opacity: 0.8;
-      padding: 30px;
+      opacity: 0.85;
+      font-size: 1.2rem;
     }
   }
 }

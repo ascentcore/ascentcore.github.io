@@ -1,8 +1,56 @@
 .contact {
-  background: linear-gradient(207deg, #262554, #403d9b);
-  background-size: 100% 100%;
+  background: linear-gradient(210deg, #f34e35, #403d9b);
+  padding: 180px;
+  animation-name: AnimationName;
+  background-size: 400% 400%;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  transition: all 500ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  display: flex;
+  flex-wrap: wrap;
 
-  b {
-    font-weight: bold;
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 50%;
+
+    .email-input {
+      margin-bottom: 30px;
+
+      input {
+        display: block;
+        background: none;
+        box-shadow: none;
+        border: 2px solid #d6d6d6;
+        height: 45px;
+        width: 420px;
+        margin-top: 15px;
+      }
+    }
+
+    textarea {
+      background: none;
+      box-shadow: none;
+      border: 2px solid #d6d6d6;
+      height: 45px;
+      width: 420px;
+      margin-top: 15px;
+      display: block;
+      height: 220px;
+    }
+  }
+
+  h3 {
+    font-size: 3.2rem;
+    opacity: 0.85;
+    margin-bottom: 30px;
+  }
+
+  p {
+    opacity: 0.85;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
   }
 }

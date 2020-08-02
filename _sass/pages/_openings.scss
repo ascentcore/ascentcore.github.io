@@ -1,26 +1,53 @@
 .openings {
-  background: linear-gradient(27deg, $openings-color-1, $openings-color-2);
+  background: linear-gradient(27deg, #403d9b, #403d9b);
   background-size: 100% 100%;
-  color: $openings-font-color;
+  color: #fff;
+  padding: 180px;
+
+  h3 {
+    font-size: 3.2rem;
+    opacity: 0.85;
+    margin-bottom: 90px;
+  }
 
   .card {
+    margin-bottom: 90px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     .card-title, .card-title a {
+      opacity: 0.85;
       color: $openings-font-color;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
     }
     .card-description {
+      opacity: 0.85;
       color: $openings-font-color;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+
+    .card-actions {
+      a {
+        color: #fff;
+        margin-top: 30px;
+        display: inline-block;
+      }
     }
   }
 
-  .image {
-    height: calc(70vh - 70px);
-    width: 30vw;
-    margin-top: 0px;
-    background-image: url(/assets/static/openings.jpg);
-    opacity: 0.3;
-    background-size: contain;
-    position: absolute;
-    top: 20%;
-    right: 20%;
-  }
+  //.image {
+  //  height: calc(70vh - 70px);
+  //  width: 30vw;
+  //  margin-top: 0px;
+  //  background-image: url(/assets/static/openings.jpg);
+  //  opacity: 0.3;
+  //  background-size: contain;
+  //  position: absolute;
+  //  top: 20%;
+  //  right: 20%;
+  //}
 }
