@@ -1,14 +1,22 @@
 body {
   //font-family: "Lato", sans-serif;
-  font-family: 'Karla', sans-serif;
+  //font-family: 'Karla', sans-serif;
+  font-family: 'Inconsolata', monospace;
   width: 100%;
   font-size: 18px;
-  color: #444;
+  font-weight: 400;
+  color: #1d1d1d;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 section {
   position: relative;
-  color: $section-color;
 
   .image {
     background-attachment: fixed;

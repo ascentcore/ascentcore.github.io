@@ -1,11 +1,10 @@
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
+.top-header {
   width: 100%;
   display: flex;
   z-index: 3;
-  height: 80px;
+  padding: 0 0 40px;
+  border-bottom: 1px dashed #eaeaea;
+  margin-bottom: 60px;
 
   .logo {
     width: 70px;
@@ -22,7 +21,6 @@
   }
 
   .anim-container {
-    padding-left: 50px;
     overflow: hidden;
     height: 30px;
     margin-top: 50px;
@@ -39,7 +37,6 @@
       line-height: 1.2;
       position: relative;
       font-weight: bold;
-      color: #fff;
       margin-bottom: 30px;
     }
 
@@ -50,7 +47,6 @@
       text-transform: uppercase;
       letter-spacing: 5px;
       font-weight: bold;
-      color: #fff;
     }
 
   }
@@ -67,9 +63,10 @@
     span {
       cursor: pointer;
       display: inline-block;
-      margin: 0 $sidebar-links-spacing 0 0;
+      margin: 0 0 0 45px;
       text-decoration: none;
-      color: #fff;
+      color: #1d1d1d;
+      font-size: 1rem;
 
       &:hover {
         color: #999;
@@ -79,12 +76,12 @@
 }
 
 @keyframes switchtitle {
-  0%  {transform: translateY(0)}
-  23%  {transform: translateY(0)}
-  25% {transform: translateY(-51px)}
-  78% {transform: translateY(-51px)}
-  80% {transform: translateY(0)}
-  100% {transform: translateY(0)}
+  0%  {transform: translateY(-51px)}
+  23%  {transform: translateY(-51px)}
+  25% {transform: translateY(0)}
+  78% {transform: translateY(0)}
+  80% {transform: translateY(-51px)}
+  100% {transform: translateY(-51px)}
 }
 
 
