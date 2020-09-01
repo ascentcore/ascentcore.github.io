@@ -1,26 +1,8 @@
 .services {
-  background: linear-gradient(27deg, #f34e35, #403d9b);
   background-size: 100% 100%;
-
-  h2 {
-    margin: 0;
-    text-align: left;
-  }
-
-  p {
-    margin-bottom: 40px;
-    color: $color-faded;
-  }
-
-  .image {
-  
-    height: calc(70vh - 70px);
-    width: 40vw;
-    margin-top: 60px;
-    background-image: url(/assets/static/notebook.jpeg);
-    opacity: 0.3;
-    position: absolute;
-    top: 20%;
-    right: 20%;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 320px auto 0;
 }

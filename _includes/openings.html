@@ -1,29 +1,21 @@
 <section class="openings" id="openings">
-  <div class="image"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h3>Openings</h3>
-      </div>
-      {% for app in site.data.openings %}
-      <div class="col-xs-12 col-sm-6 col-lg-4">
-        <div class="card">
-          <div class="card-title">
-            {{app.title}}
-          </div>
-          <div class="card-description">
-            <ul>
-              {% for desc in app.description %}
-              <li>{{desc}}</li>
-              {% endfor %}
-            </ul>
-          </div>
-          <div class="card-actions">
-            <a href="https://forms.gle/SwB9XNCaQJ6UUPb36" target="_new">Apply</a>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
+  <h3>Openings</h3>
+  {% for app in site.data.openings %}
+  <div class="card">
+    <div class="card-title">
+      {{app.title}}
+    </div>
+    <div class="card-description">
+      <ul>
+        {% for desc in app.description %}
+        <li>{{desc}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="card-actions">
+      <a href="https://forms.gle/SwB9XNCaQJ6UUPb36" target="_new">Apply</a>
     </div>
   </div>
+  {% endfor %}
+  <p class="apply-text">Apply by attaching your CV or LinkedIn profile at <a href="mailto:hr@ascentcore.com">hr@ascentcore.com</a>.</p>
 </section>
