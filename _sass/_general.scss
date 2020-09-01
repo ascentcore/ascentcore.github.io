@@ -15,6 +15,45 @@ body {
   flex-wrap: wrap;
 }
 
+.author {
+  border-top: 1px solid #808080;
+  padding: 50px 0;
+  margin: 50px 0;
+
+  img {
+    float: left;
+    width: 100px !important;
+    height: 100px;
+    margin-left: 15px !important;
+    border-radius: 100%;
+    vertical-align: text-top;
+    border: 1px solid rgba(0,0,0, 0.2);
+    padding: 2px;
+  }
+
+  span {
+    display: block;
+    margin-left: 150px;
+
+    &.grayed {
+      color: rgb(120, 120, 120);
+    }
+
+    &.name {
+      font-weight: 700;
+      font-size: 24px;
+      padding: 10px 0;
+
+      span {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
 section {
   position: relative;
 

@@ -29,3 +29,11 @@ sass:
   style:            :compressed
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+
+authors:
+  sara:
+    name: Sara
+    description: Machine Learning Engineer as part of the Ascentcore Research Lab team
+  corina:
+    name: Corina
+    description: Fullstack engineer as part of the Ascentcore Frontend Development team
