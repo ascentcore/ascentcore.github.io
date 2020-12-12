@@ -1,14 +1,15 @@
-- title: Senior C++ Developer
-  header: C++
+- title: Full-stack JS Developer
+  header: JS
   description:
-    - Build a series of C++ projects compatible with cross-platform systems (Linux, QNX, Windows)
-    - Work with popular embedded infotainment platforms
-    - Be part of an autonomous product team
+    - Build an education platform from scratch
+    - Everything will be deployed in the cloud (AWS)
+    - Focus on performance and optimizing the delivery process
 
-- title: Full Stack Engineer / Tech Lead
-  header: Node.JS
+- title: Technical Manager
+  header: 
   description:
-    - Implement a templating engine from scratch
-    - Exposure to ML Algorithms
-    - Be part of the core team and have ownership on technical decisions
+    - Ownership for the delivery area: supervising the development and implementation of the project
+    - Coordinate the team from a technical and administrative point of view
+    - Make key decisions for technical issues related to the project
+    - Main contact in the relationship with the client, stakeholders management
 
