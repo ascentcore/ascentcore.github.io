@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+	{% include topbar.html %}
+
+	<div class="bootstrap-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="post" id="content">
+					{{ content }}
+					{% include author.html %}
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

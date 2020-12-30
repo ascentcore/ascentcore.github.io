@@ -1,0 +1,150 @@
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <!-- FOOTER LEFT SIDE -->
+      <div class="footer__left">
+        <div class="footer__logo">ASCENTCORE</div>
+        <h3 class="footer__tagline">Better quality, no trade-offs</h3>
+        <div class="footer__location">
+          <div class="footer__address">
+            <p>Nicolae Draganu Nr.4</p>
+            <p>Cluj Napoca, Romania</p>
+          </div>
+          <div class="footer__address">
+            <p>1284 Auburn Grove Ln Reston</p>
+            <p>VA 20194, USA</p>
+          </div>
+        </div>
+        <a href="#" class="footer__link"> Contact us </a>
+        <p class="footer__copyright">© Ascentcore 2020</p>
+      </div>
+
+      <!-- FOOTER RIGHT SIDE -->
+      <div class="footer__right">
+        <nav class="footer__nav">
+          <ul>
+            <li><a href="#" class="footer__navlink">Home</a></li>
+            <li><a href="#" class="footer__navlink">About</a></li>
+            <li><a href="#" class="footer__navlink">Services</a></li>
+            <li><a href="#" class="footer__navlink">Work</a></li>
+            <li><a href="#" class="footer__navlink">Careers</a></li>
+            <li><a href="#" class="footer__navlink">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer__grid">
+          <div class="footer__col">
+            <div class="footer__section">
+              <h3 class="footer__title">Expertise</h3>
+              <nav class="footer__secondary-nav">
+                <ul>
+                  <li>
+                    <a href="#" class="footer__secondary-link"
+                      >Architecture design</a
+                    >
+                  </li>
+                  <li><a href="#" class="footer__secondary-link">UI/UX</a></li>
+                  <li>
+                    <a href="#" class="footer__secondary-link"
+                      >Engineering management</a
+                    >
+                  </li>
+                  <li><a href="#" class="footer__secondary-link">DEVOPS</a></li>
+                  <li>
+                    <a href="#" class="footer__secondary-link"
+                      >Quality assurance</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="footer__secondary-link">Security</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer__secondary-link"
+                      >Data visualization</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="footer__secondary-link"
+                      >Machine learning</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__section">
+              <h3 class="footer__title">Industries</h3>
+              <nav class="footer__secondary-nav">
+                <ul>
+                  <li>
+                    <a href="#" class="footer__secondary-link"
+                      >Cyber Security</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="footer__secondary-link">Healthcare</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer__secondary-link">Data privacy</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer__secondary-link"
+                      >Distributed economy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="footer__secondary-link">Analitycs</a>
+                  </li>
+                  <li><a href="#" class="footer__secondary-link">Media</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__section">
+              <h3 class="footer__title">Case studies</h3>
+              <nav class="footer__secondary-nav">
+                <ul>
+                  {% for app in site.data.apps limit:5 %}
+                  <li>
+                    <a href="{{app.link}}" class="footer__secondary-link"
+                      >{{app.title}}</a
+                    >
+                  </li>
+                  {% endfor %}
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__section">
+              <h3 class="footer__title">Articles</h3>
+              <nav class="footer__secondary-nav">
+                <ul>
+                  {% for post in site.posts limit:5 %}
+                  <li>
+                    <a href="{{post.url}}" class="footer__secondary-link"
+                      >{{post.title}}</a
+                    >
+                  </li>
+                  {% endfor %}
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="footer__row">
+            <div class="footer__section">
+              <h3 class="footer__title">Careers</h3>
+              <p class="footer__careers-tagline">
+                We’re always looking for top talent
+              </p>
+              <a href="#" class="footer__link">See our opportunities</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

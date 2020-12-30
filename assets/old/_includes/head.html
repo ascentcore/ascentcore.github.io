@@ -1,0 +1,54 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Plain Description -->
+	<title>{{ site.title }}</title>
+	<!-- <meta name="description" content="{% if page.excerpt %}{{page.excerpt}}{% else %}{{site.tagline}}{% endif %}"> -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+	
+
+	<!-- CSS & fonts -->
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/bootstrap.css?v={{site.version}}" type="text/css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/ascentcore.css?v={{site.version}}" type="text/css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+	<!-- Put your fonts here -->
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Inconsolata&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css"
+		href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+	<script>
+		window.addEventListener("load", function () {
+			window.cookieconsent.initialise({
+				"palette": {
+					"popup": {
+						"background": "#3937a3"
+					},
+					"button": {
+						"background": "#e62576"
+					}
+				}
+			})
+		});
+	</script>
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139465094-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-139465094-1');
+	</script>
+
+</head>

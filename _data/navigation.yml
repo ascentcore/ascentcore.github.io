@@ -1,0 +1,20 @@
+- text: Home
+  url: /
+
+- text: About
+  url: /about.html
+
+- text: Services
+  url: /services.html
+
+- text: Work
+  url: /work.html
+
+- text: Showcase
+  url: /showcase.html
+
+- text: Careers
+  url: /careers.html
+
+- text: Contact
+  url: /contact.html

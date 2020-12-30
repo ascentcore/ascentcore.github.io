@@ -5,20 +5,10 @@ fulltitle: "AscentCore Website"
 excerpt: Best quality. No trade-offs.
 ---
 
-
-{% include sidebar.html %}
-{% include intro.html %}
-{% include process.html %}
-{% include showcase.html %}
-{% include openings.html %}
-{% include contact.html %}
-
-<!-- Navigation -->
-<script>
-  function scrollToSection(id) {
-    console.log(document.getElementById(id));
-    document.getElementById(id).scrollIntoView({
-      behavior: 'smooth'
-    })
-  }
-</script>
+<div class="homepage">
+    {% include homepage/hero.html %}
+    {% include homepage/intro.html %}
+    {% include homepage/process.html %}
+    {% include homepage/testimonials.html %}
+    {% include homepage/contact.html %}
+</div>

@@ -1,6 +1,6 @@
 ---
 layout: post
-img: assets/static/json-schema.png
+img: /assets/images/articles/json-schema.png
 title:  "React Schema Form Library"
 description: "Form generation library and validation based on JSON schema for React"
 author: corina
@@ -326,7 +326,7 @@ The library is implemented according to ajv’s default behavior. When the prope
 
 **Registry customization** - the registry of the library has the following form
 
-```
+``` 
 enum: { component: ..., wrapper: ... },
 multipleEnum: { component: ..., wrapper: ... },
 boolean: { component: ..., wrapper: ... },

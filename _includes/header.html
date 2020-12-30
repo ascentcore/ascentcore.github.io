@@ -1,0 +1,47 @@
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__logo">ASCENTCORE</div>
+      <nav class="header__nav">
+        <ul>
+          {% for nav in site.data.navigation %}
+          <a
+            href="{{ nav.url }}"
+            class="header__link {% if nav.url == page.url %}header__link--active{% endif %}"
+            >{{ nav.text }}</a
+          >
+          {% endfor %}
+        </ul>
+      </nav>
+      <div
+        class="header__menu-trigger"
+        id="menuTrigger"
+        onclick="handleMenuTrigger()"
+      >
+        <div class="header__trigger-line"></div>
+        <div class="header__trigger-line"></div>
+        <div class="header__trigger-line"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__close" onclick="handleMenuTrigger()">
+    <div class="mobile-menu__close-line"></div>
+    <div class="mobile-menu__close-line"></div>
+  </div>
+  <ul>
+    <li>
+      {% for nav in site.data.navigation %}
+      <a
+        href="{{ nav.url }}"
+        class="mobile-menu__link {% if nav.url == page.url %}mobile-menu__link--active{% endif %}"
+        >{{ nav.text }}</a
+      >
+      {% endfor %}
+      
+    </li>
+  </ul>
+</nav>

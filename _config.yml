@@ -30,6 +30,28 @@ sass:
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
 
+
+collections:
+  openings:
+    output: true
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "openings"
+    values:
+      layout: "opening"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 authors:
   sara:
     name: Sara

@@ -1,0 +1,52 @@
+---
+layout: default
+fulltitle: "AscentCore Website"
+excerpt: Best quality. No trade-offs.
+---
+
+<div class="job">
+  <!-- HERO SECTION -->
+  <section class="job-hero">
+    <div class="container">
+      <h1 class="job-hero__title">{{ page.title }}</h1>
+      <p class="job-hero__description">{{ page.description }}</p>
+    </div>
+  </section>
+  <!-- JOBS SECTION -->
+  <section class="job-details">
+    <div class="container">
+      <div class="job-details__inner">
+        <div class="job-details__column job-details__column--left">
+          <h3 class="job-details__title">Responsibilities</h3>
+          <ul class="job-details__list">
+            {% for res in page.responsabilities %}
+            <li>
+              <span class="job-details__icon"><i class="fa fa-check"></i></span>
+              {{ res }}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="job-details__column job-details__column--right">
+          <h3 class="job-details__title">Requirements</h3>
+          <ul class="job-details__list">
+            {% for res in page.requirements %}
+            <li>
+              <span class="job-details__icon"><i class="fa fa-check"></i></span>
+              {{res}}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLY -->
+  <div class="container">
+    <section class="page-cta">
+      <h3 class="page-cta__title">Feel right for the job?</h3>
+      <a href="/contact" class="page-cta__link">Apply now</a>
+    </section>
+  </div>
+</div>
