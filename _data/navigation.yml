@@ -1,20 +1,18 @@
-- text: Home
-  url: /
-
-- text: About
-  url: /about.html
-
 - text: Services
-  url: /services.html
+  url: services.html
 
-- text: Work
-  url: /work.html
+- text: Our Work
+  url: work.html
 
-- text: Showcase
-  url: /showcase.html
+- text: About Us
+  url: about.html
+
+
+- text: Insights
+  url: insights.html
 
 - text: Careers
-  url: /careers.html
+  url: careers.html
 
 - text: Contact
-  url: /contact.html
+  url: contact.html

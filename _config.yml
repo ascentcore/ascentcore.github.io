@@ -3,7 +3,7 @@ title: Ascentcore Website
 tagline: "Best quality. No trade-offs."
 url: "http://ascentcore.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
 version: 0.0.1
-
+#baseurl: /website-draft
 # Social
 #socialimg: /img/social.jpg # be sure to change this image
 #facebook: fbusername
@@ -17,7 +17,7 @@ kramdown:
   input: GFM
   syntax_highlighter_opts:
     default_lang: html
-    css_class   : 'syntax'
+    css_class: "syntax"
 
 # Contact
 #phone: "916-276-1044" # This is my real number. You should text me.
@@ -25,16 +25,14 @@ email: "contact@ascentcore.com" # This is my real email address. Please don't em
 
 # Use this for production
 sass:
-  sass_dir:         _sass
-  style:            :compressed
+  sass_dir: _sass
+  style: :compressed
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
-
 
 collections:
   openings:
     output: true
-
 
 defaults:
   - scope:

@@ -1,5 +1,68 @@
 .services {
     /* --------------------- Services page styles --------------------- */
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 950px;
+
+        @media (max-width: 767px) {
+            margin: var(--space-small);
+        }
+
+        .grid-item {
+            @media (max-width: 767px) {
+                width: 100%;
+                padding: var(--space-small);
+            }
+
+            width: 25%;
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+            margin: 0 auto;
+
+            h3, div {
+                text-align: left;
+            }
+
+            img {
+                width: 100px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: row-reverse;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+
+        .content {
+            position: relative;
+            clear: both;
+            width: 60%;
+            padding-left: 100px;
+
+            @media (max-width: 767px) {
+                max-width: 100%;
+                padding-left: 10px;
+            }
+
+            ul {
+                border-left: 1px solid var(--color-orange);
+                padding-left: var(--space-small);
+                li {
+                    text-transform: uppercase;
+                    color: var(--color-blue);
+                }
+            }
+        }
+    }
 
     /* Hero section */
     .services-hero {
@@ -29,7 +92,7 @@
         top: 0;
         left: 0;
         opacity: 0.1;
-        background-image: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2100&q=80");
+        background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2100&q=80');
         background-size: 100%;
         background-position: center center;
         background-attachment: fixed;
@@ -71,24 +134,60 @@
     }
 
     .service__text {
-        width: 45%;
-        padding-right: var(--space-xlarge);
+        width: 50%;
+        padding: 0 var(--space-xlarge);
         box-sizing: border-box;
     }
 
     .service__image {
-        width: 55%;
+        width: 50%;
         height: 250px;
     }
 
     .service .service__image {
-        background-image: url("https://images.unsplash.com/photo-1547954575-855750c57bd3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2100&q=80");
+        background-image: url('services/arch.jpg');
         background-size: cover;
         background-position: center center;
     }
 
     .service:nth-child(2) .service__image {
-        background-image: url("https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2100&q=80");
+        background-image: url('services/development.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .service:nth-child(3) .service__image {
+        background-image: url('services/ux.jpeg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .service:nth-child(4) .service__image {
+        background-image: url('services/qa.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .service:nth-child(5) .service__image {
+        background-image: url('services/analytics.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .service:nth-child(6) .service__image {
+        background-image: url('services/devops.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .service:nth-child(7) .service__image {
+        background-image: url('services/security.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .service:nth-child(8) .service__image {
+        background-image: url('services/security.jpg');
         background-size: cover;
         background-position: center center;
     }
@@ -97,6 +196,13 @@
         font-size: var(--text-medium-titles);
         padding: 0;
         margin: 0 0 var(--space-small) 0;
+        &:after {
+            content: ' ';
+            display: block;
+            width: 100px;
+            height: 10px;
+            border-bottom: 4px solid var(--color-orange);
+        }
     }
 
     .service__description {
@@ -115,6 +221,17 @@
 
     .service--colored {
         background: var(--color-light-gray);
+
+        .container {
+            .service__name {
+                &:after {
+                    border-bottom-color: var(--color-blue);
+                }
+            }
+            .service__inner {
+                flex-direction: row-reverse;
+            }
+        }
     }
 
     @media (max-width: 767px) {

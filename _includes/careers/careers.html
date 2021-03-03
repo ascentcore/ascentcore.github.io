@@ -3,7 +3,7 @@
   <div class="container">
     <h1 class="careers-hero__title">Careers</h1>
     <p class="careers-hero__description">
-      A team of experts that value lorem ipsum dolor sit amet.
+      
     </p>
   </div>
   <div class="careers-hero__image"></div>
@@ -15,20 +15,19 @@
     <div class="jobs__inner">
       <div class="jobs__copy">
         <h2 class="jobs__cta-title">We're hiring!</h2>
-        
+
         <p class="jobs__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam.
+          Ascentcore is an equal opportunity employer committed to maintaining a diverse workplace.
         </p>
       </div>
       <div class="jobs__list">
-
         {% for job in site.openings %}
         <div class="jobs__post jobs__post--active">
           <h3 class="jobs__job-title">{{ job.title }}</h3>
           <p class="jobs__job-description">{{ job.description }}</p>
-          <a href="{{ job.url }}" class="jobs__job-link">Job details</a>
+          <a href="{{ site.baseurl }}{{ job.url }}" class="jobs__job-link"
+            >Job details</a
+          >
         </div>
         {% endfor %}
       </div>

@@ -2,12 +2,12 @@
 <header class="header">
   <div class="container">
     <div class="header__inner">
-      <div class="header__logo">ASCENTCORE</div>
+      <a href="{{ site.baseurl }}/index.html" class="header__logo">ASCENTCORE</a>
       <nav class="header__nav">
         <ul>
           {% for nav in site.data.navigation %}
           <a
-            href="{{ nav.url }}"
+            href="{{ site.baseurl }}/{{ nav.url }}"
             class="header__link {% if nav.url == page.url %}header__link--active{% endif %}"
             >{{ nav.text }}</a
           >
@@ -36,7 +36,7 @@
     <li>
       {% for nav in site.data.navigation %}
       <a
-        href="{{ nav.url }}"
+        href="{{ site.baseurl }}/{{ nav.url }}"
         class="mobile-menu__link {% if nav.url == page.url %}mobile-menu__link--active{% endif %}"
         >{{ nav.text }}</a
       >

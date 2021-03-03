@@ -31,13 +31,39 @@
         font-size: var(--text-large);
         padding: var(--space-small) var(--space-large) 0 0;
         box-sizing: border-box;
+
+        &.emph {
+            color: var(--color-blue);
+            .orange {
+                color: var(--color-orange);
+            }
+        }
     }
 
     .story__images {
+        position: relative;
         width: 50%;
         padding-left: var(--space-large);
         box-sizing: border-box;
         margin-top: calc((var(--space-xlarge)) * -1);
+
+        img {
+            max-width: 450px;
+        }
+
+        img:nth-child(2) {
+            position: absolute;
+            left: -20px;
+            bottom: -100px;
+            max-width: 350px;
+        }
+    }
+
+    .story__action {
+        width: 50%;
+        padding: var(--space-small) var(--space-large) 0 0;
+        text-align: right;
+        box-sizing: border-box;
     }
 
     .story__images img {
@@ -72,6 +98,7 @@
     }
 
     .team--bg-grey {
+        padding-top: var(--space-large);
         background: var(--color-light-gray);
     }
 
@@ -88,7 +115,7 @@
     }
 
     .team__member {
-        width: calc(20% - var(--space-small));
+        width: calc(25% - var(--space-small));
         margin-bottom: var(--space-medium);
     }
 

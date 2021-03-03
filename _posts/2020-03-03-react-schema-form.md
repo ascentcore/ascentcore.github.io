@@ -1,6 +1,6 @@
 ---
 layout: post
-img: /assets/images/articles/json-schema.png
+img: assets/images/articles/json-schema.png
 title:  "React Schema Form Library"
 description: "Form generation library and validation based on JSON schema for React"
 author: corina
@@ -107,11 +107,11 @@ $ yarn start
 
     An example of wrapper usage, processing both data and errors, can be seen inside example/src/custom-error-messages folder.
 
- * **config** is an optional property which supports the following
+* **config** is an optional property which supports the following
 
-    - **registry** - an optional object which can be defined to override the standard registry, meaning what component/wrapper will be rendered when specific registryKey will be encountered. It supports both component and wrapper overriding. The component can be either a component from the library, or a new component defined by the user. In the first case, the component will be given as a string. In the second case, the component will be given as a React Component. Our library's existing components are detailed in the [Form default elements](#form-default-elements). The wrapper, if specified, has to be a custom component. A case of usage can be wanting to use radio buttons instead of a select with options when encountering fields of type enum.
+* **registry** - an optional object which can be defined to override the standard registry, meaning what component/wrapper will be rendered when specific registryKey will be encountered. It supports both component and wrapper overriding. The component can be either a component from the library, or a new component defined by the user. In the first case, the component will be given as a string. In the second case, the component will be given as a React Component. Our library's existing components are detailed in the [Form default elements](#form-default-elements). The wrapper, if specified, has to be a custom component. A case of usage can be wanting to use radio buttons instead of a select with options when encountering fields of type enum.
 
-    - **exceptions** - an optional object which can be defined to override the standard registry for a specific property key or path, meaning what component/wrapper will be rendered. Specific key means a property with a specific name at any nesting level. Specific path means a string with a pattern like this ".user/.age", and it will match a single property of the json schema. The component can be either a component from the library, or a new component defined by the user. In the first case, the component will be given as a string. In the second case, the component will be given as a React Component. Our library's existing components are detailed in the [Form default elements](#form-default-elements). The wrapper, if specified, has to be a custom component. An example of config usage can be found inside example/src/custom-registry folder. 
+* **exceptions** - an optional object which can be defined to override the standard registry for a specific property key or path, meaning what component/wrapper will be rendered. Specific key means a property with a specific name at any nesting level. Specific path means a string with a pattern like this ".user/.age", and it will match a single property of the json schema. The component can be either a component from the library, or a new component defined by the user. In the first case, the component will be given as a string. In the second case, the component will be given as a React Component. Our library's existing components are detailed in the [Form default elements](#form-default-elements). The wrapper, if specified, has to be a custom component. An example of config usage can be found inside example/src/custom-registry folder. 
 
 ## <a name="form-default-elements"></a>Form default elements
 
@@ -419,7 +419,7 @@ const formatError = (err) => {
 return (<SchemaForm schema={schema} errorFormatter={formatError} />)
 ```
 
-    The error object is the ajv ValidationError, having the following structure: keyword, dataPath, schemaPath, params, message, schema, parentSchema, data. The message field is the one that is displayed by the default wrapper.
+The error object is the ajv ValidationError, having the following structure: keyword, dataPath, schemaPath, params, message, schema, parentSchema, data. The message field is the one that is displayed by the default wrapper.
 
 ## <a name="custom-meta-schema"></a>Custom JSON meta-schema
 

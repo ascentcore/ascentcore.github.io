@@ -1,9 +1,9 @@
 - title: Realtime Attack Prediction
   description: Realtime attack prediction based on packet analysis using pre trained neural net
-  img: assets/static/showcase_thumb-1.png
+  img: assets/static/insights_thumb-1.png
   link: /pages/showcase.html
 
 - title: Pandemic Simulator
   description: Part of COVID-19 Challenge
-  img: assets/static/showcase_thumb-3.png
+  img: assets/static/insights_thumb-3.png
   link: /pages/pandemic.html
