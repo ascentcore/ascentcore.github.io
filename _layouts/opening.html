@@ -39,6 +39,24 @@ excerpt: Best quality. No trade-offs.
           </ul>
         </div>
       </div>
+      <div class="job-details__column">
+        {% for section in page.extra %}
+        <div>
+          <h3 class="job-details__title">
+            {% for desc in section limit 1%} {{desc[0]}} {% endfor%}
+          </h3>
+          <ul class="job-details__list">
+            {% for desc in section limit 1%} {% assign items = desc[1] | split:
+            "," %} {% for item in items %}
+            <li>
+              <span class="job-details__icon"><i class="fa fa-check"></i></span
+              >{{item}}
+            </li>
+            {% endfor%} {% endfor%}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
     </div>
   </section>
 

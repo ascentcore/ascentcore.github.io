@@ -1,28 +1,25 @@
 ---
 title: C++ Developer
 description: We are looking for a c++ developer to be part of a growing team of software engineers that is building a series of portable c++ projects(Linux, QNX, Windows). The primary responsibility will be to design, develop and maintain these applications
+
 responsabilities:
 
-    - Proficiency in C++
-    - Good knowledge of the C++11 standard is important
-    - Experience with QT/QML is a plus
-    - Familiarity with networking protocols (IP, TCP/UDP, TLS, HTTP) is a plus
-    - "Familiarity with the most common open source c++ libraries is a plus (e.g.: gtest,…)"
-    - Familiarity with networking
-    - Able to work in a linux based development environment
-    - Thorough knowledge of the standard library, algorithms
-    - Good analytical capabilities and synthesis skills
-    - A highly collaborative spirit & results-oriented focus
-    - Attention to detail, resourcefulness
-    - Good spoken / written English
+    - Develop software components (C++/Android)
+    - Analyze customer specifications; Develop components based on this information
+    - Resolve inconsistencies in case of unclear technical requirements in the specification by direct communication with the customer
+    - Make functional testing of developed source code, participate in code review sessions
+    - Create and maintain code design documents on a high level and/or component level
 
 requirements:
 
-    - Design, develop, test and maintain portable c++ projects (Linux, QNX, Windows)
-    - Work with popular embedded infotainment platforms
-    - Maintain and enrich the SDKs features together with the rest of the team
-    - Collaborate with other c++ teams
-    - Be part of an autonomous product team
-    - Stay up to date on technological advancements to continuously improve our efforts
+    - Minimum 2+ years of experience in C++ with a fair knowledge of the language specification
+    - Relevant Linux and/or Android knowledge
+    - Experience in developing embedded applications (is a big plus)
+    - Proficient in using various debugging techniques, analyzing logs, and adding instrumentation to root cause the defect
 
+extra:
+
+    - Working knowledge of existing tools: Jira (Defect management), Github (Configuration Management), CLion or similar (Integrated Developer Environment), Linux Virtual Machine,Jenkins, Charles Proxy (IP logging tool)
+    - Social skills: Good English communication skills both written and verbal, Detail-oriented, Able to work both independently and within a team environment
+    - Way of working: Agile
 ---
