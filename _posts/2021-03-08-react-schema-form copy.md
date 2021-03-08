@@ -29,7 +29,7 @@ Stakeholder buy-in, a talented implementation team, and internal momentum in fav
 
 If you’re embarking on an AI implementation, you may want an internal AI team. Keep in mind, however, that building the right team isn’t easy. 
 
-According to Deloitte, 80 percent of highly-experienced companies with strong AI teams say they still experience talent shortages and skill gaps. Recruiting and retaining robust AI teams is even harder for organizations with less-established programs. In fact, only 6% of beginning AI programs and teams manage to avoid talent shortages. 
+According to [Deloitte](https://www2.deloitte.com/us/en/insights/industry/technology/ai-talent-challenges-shortage.html), 80 percent of highly-experienced companies with strong AI teams say they still experience talent shortages and skill gaps. Recruiting and retaining robust AI teams is even harder for organizations with less-established programs. In fact, only 6% of beginning AI programs and teams manage to avoid talent shortages. 
 
 Even with experienced project managers and access to the right talent, piloting a new AI project is hard. Early discovery is valuable as long as it doesn’t lead your team down the wrong path. 
 
