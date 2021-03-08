@@ -1,6 +1,6 @@
 ---
 title: C++ Developer
-description: We are looking for a c++ developer to be part of a growing team of software engineers that is building a series of portable c++ projects(Linux, QNX, Windows). The primary responsibility will be to design, develop and maintain these applications
+description: We are looking for a C++ developer to be part of a growing team of software engineers that is building a series of portable C++ projects(Linux, QNX, Windows). The primary responsibility will be to design, develop and maintain these applications.
 
 responsabilities:
 
