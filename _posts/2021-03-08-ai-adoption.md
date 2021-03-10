@@ -1,6 +1,6 @@
 ---
 layout: post
-img: assets/images/articles/ai-adoption.jpg
+img: assets/images/articles/bb8.png
 title:  "How AI Adoption Enables Digital Transformation"
 description: "Artificial Intelligence (AI) allows companies to leverage data at scale for any number of business use cases. It can be used effectively wherever pattern discovery, predictive analytics, and complex decision making are needed. "
 ---
