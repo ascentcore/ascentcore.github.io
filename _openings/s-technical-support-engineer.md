@@ -1,6 +1,6 @@
 ---
 title: C++ Technical Support Engineer
-description: The Software Engineer will be responsible for designing, developing, documenting and integrating components for OEM implementations of Client services. The main languages used are C++ and Java in QNX, Linux, and Android environments. The focus of the engineer would be to help with the documentation and work with customers to integrate the Client`s SDK in their products.
+description: The Software Engineer will be responsible for designing, developing, documenting and integrating components for OEM implementations of Client services. The main languages used are C++ and Java in QNX, Linux, and Android environments. The focus of the engineer would be to help with the documentation and work with customers to integrate the Client's SDK in their products.
 
 responsabilities:
     - Help customers with SDK integration by using the documentation and update the documentation appropriately with the feedback from customers.
