@@ -1,0 +1,46 @@
+<section class="insights" id="insights">
+  <div class="flex">
+    <div class="header">
+      <h3>Insights</h3>
+    </div>
+    <div class="boxes">
+      <div class="flex">
+
+        {% for app in site.data.apps %}
+        <div class="card">
+          <a href="{{app.link}}" class="card-image" style='background-image: url("{{app.img}}");'></a>
+          <div class="card-info">
+            <div class="card-title">
+              <a href="{{app.link}}">{{app.title}}</a>
+            </div>
+
+            <div class="card-description">
+              <p>{{app.description}}</p>
+              <!--          <a class="button" href="{{app.link}}">Open experiment</a>-->
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+        {% for post in site.posts %}
+        <div class="card">
+          <a href="{{post.url}}" class="card-image" style='background-image: url("{{post.img}}");'></a>
+          <div class="card-info">
+            <div class="card-title">
+              <a href="{{post.url}}">{{post.title}}</a>
+            </div>
+
+            <div class="card-description">
+              <p>{{post.description}}</p>
+              <!--          <a class="button" href="{{post.url}}">Open post</a>-->
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+
+
+</section>

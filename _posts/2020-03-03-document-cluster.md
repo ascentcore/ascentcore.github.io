@@ -1,8 +1,8 @@
 ---
 layout: post
-img: assets/static/docu-cluster.png
+img: assets/images/articles/docu-cluster.png
 title:  "Document Clustering"
-description: "Sample document description"
+description: "Unsupervised document clustering technique"
 author: sara
 ---
 
@@ -18,7 +18,7 @@ Given a set of documents the aim is to group the documents that share some parti
 
 The dataset is composed of documents and it is preferable that these are of various categories so that the groups are as obvious as possible. A very simple dataset that we will use as an example in the following contains only 7 documents, each with a short content.
 
-![](/assets/documents/1.png)
+![]({{ site.baseurl }}/assets/documents/1.png)
 
 ## 3. Parsing
 
@@ -36,11 +36,11 @@ There are a number of filters through which a document is passed, and these are:
 
 
 
-![2](/assets/documents/2.gif)
+![2]({{ site.baseurl }}/assets/documents/2.gif)
 
 A vocabulary is created which is composed of the words kept in the documents after processing.
 
-![3](/assets/documents/3.gif)
+![3]({{ site.baseurl }}/assets/documents/3.gif)
 
 
 
@@ -81,9 +81,9 @@ def pca(tf_idf_array):
     return sklearn_pca, Y_sklearn
 ```
 
-![4](/assets/documents/4.gif)
+![4]({{ site.baseurl }}/assets/documents/4.gif)
 
-![5](/assets/documents/5.gif)
+![5]({{ site.baseurl }}/assets/documents/5.gif)
 
 
 
@@ -120,7 +120,7 @@ def silhouette_optimal_number_clusters(Y_sklearn, max_clusters=10, iterations=60
 
 The optimal number of clusters for the chosen dataset is 3.
 
-![6](/assets/documents/6.png)
+![6]({{ site.baseurl }}/assets/documents/6.png)
 
 
 
@@ -143,7 +143,7 @@ def cluster(Y_sklearn, optimal_number_clusters):
     return test_e, predicted_values
 ```
 
-![7](/assets/documents/7.gif)
+![7]({{ site.baseurl }}/assets/documents/7.gif)
 
 ## 8. Feature extraction
 

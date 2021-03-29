@@ -1,0 +1,58 @@
+<!-- HEADER -->
+<!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NSHFZHK"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="{{ site.baseurl }}/index.html" class="header__logo"
+        >ASCENTCORE</a
+      >
+      <nav class="header__nav">
+        <ul>
+          {% for nav in site.data.navigation %}
+          <a
+            href="{{ site.baseurl }}/{{ nav.url }}"
+            class="header__link {% if nav.url == page.url %}header__link--active{% endif %}"
+            >{{ nav.text }}</a
+          >
+          {% endfor %}
+        </ul>
+      </nav>
+      <div
+        class="header__menu-trigger"
+        id="menuTrigger"
+        onclick="handleMenuTrigger()"
+      >
+        <div class="header__trigger-line"></div>
+        <div class="header__trigger-line"></div>
+        <div class="header__trigger-line"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__close" onclick="handleMenuTrigger()">
+    <div class="mobile-menu__close-line"></div>
+    <div class="mobile-menu__close-line"></div>
+  </div>
+  <ul>
+    <li>
+      {% for nav in site.data.navigation %}
+      <a
+        href="{{ site.baseurl }}/{{ nav.url }}"
+        class="mobile-menu__link {% if nav.url == page.url %}mobile-menu__link--active{% endif %}"
+        >{{ nav.text }}</a
+      >
+      {% endfor %}
+    </li>
+  </ul>
+</nav>

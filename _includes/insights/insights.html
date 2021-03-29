@@ -1,0 +1,37 @@
+<!-- HERO SECTION -->
+<section class="work-hero">
+  <div class="container">
+    <h1 class="work-hero__title">Insights</h1>
+    <p class="work-hero__description">
+      A sample of our work and insights shared by experts at Ascentcore.
+    </p>
+  </div>
+  <div class="work-hero__image"></div>
+</section>
+
+<!-- Insights -->
+<div class="insights">
+  <div class="container">
+    <!-- <div class="tabs tabs--work-page">
+      <a href="#" role="tab" class="tabs__button tabs__button--active">All</a>
+      <a href="#" role="tab" class="tabs__button">Articles</a>
+      <a href="#" role="tab" class="tabs__button">Case studies</a>
+    </div> -->
+
+    <div class="insights__inner">
+      {% for post in site.posts %}
+      <div class="insights__article">
+        <img
+          class="insights__image"
+          style='background-image: url("{{post.img}}");'
+        />
+        <a href="{{ site.baseurl }}{{post.url}}"><h4 class="insights__article-title">{{ post.title }}</h4></a>
+        <p class="insights__article-description">{{ post.description }}</p>
+        <a href="{{ site.baseurl }}{{post.url}}" class="insights__link"
+          >Learn more</a
+        >
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

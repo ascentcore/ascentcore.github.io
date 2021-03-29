@@ -1,23 +1,17 @@
 ---
 sitemap: false;
 ---
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,500,700');
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&family=Karla:wght@400;700&display=swap');
 
 @import "variables";
-@import "reset";
-@import "general";
-@import "media";
-@import "sidebar";
-@import "logo";
+@import "normalize";
+@import "common";
 
-@import "blog/content";
-@import "blog/code";
-
-@import "pages/intro";
-@import "pages/showcase";
-@import "pages/services";
-@import "pages/process";
-@import "pages/openings";
-@import "pages/contact";
+@import "homepage";
+@import "about";
+@import "contact";
+@import "services";
+@import "careers";
+@import "job";
+@import "work";
+@import "code";
+@import "post";

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    body,
+    html {
+      height: 100%;
+    }
+
+    .container {
+      display: block;
+      padding-top: 50px impo !important;
+      padding-bottom: 100px !important;
+    }
+
+    ul {
+      list-style: decimal !important;
+    }
+  </style>
+</head>
+<html>
+  {% include head.html %}
+  <body>
+    <div class="container">{{ content }}</div>
+    <div
+      style="
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #FFF;
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+      "
+    >
+      Ascentcore - Proprietary and Confidential
+    </div>
+  </body>
+</html>
