@@ -28,7 +28,7 @@ sass:
   sass_dir: _sass
   style: :compressed
 
-exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json, .idea]
 
 collections:
   openings:
