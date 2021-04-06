@@ -150,28 +150,12 @@
 
           <div class="footer__col">
             <div class="footer__section">
-              <h3 class="footer__title">Case studies</h3>
-              <nav class="footer__secondary-nav">
-                <ul>
-                  {% for app in site.data.apps limit:5 %}
-                  <li>
-                    <a href="{{ site.baseurl }}{{app.link}}" class="footer__secondary-link"
-                      >{{app.title}}</a
-                    >
-                  </li>
-                  {% endfor %}
-                </ul>
-              </nav>
-            </div>
-            <div class="footer__section">
               <h3 class="footer__title">Articles</h3>
               <nav class="footer__secondary-nav">
                 <ul>
                   {% for post in site.posts limit:5 %}
                   <li>
-                    <a href="{{ site.baseurl }}{{post.url}}" class="footer__secondary-link"
-                      >{{post.title}}</a
-                    >
+                    <a href="{{ site.baseurl }}{{post.url}}" class="footer__secondary-link">{{post.title}}</a>
                   </li>
                   {% endfor %}
                 </ul>
