@@ -2,7 +2,7 @@ version: '3.3'
 services:
   jekyll:
     image: jekyll/jekyll:3.8
-    command: jekyll serve --livereload --drafts
+    command: jekyll serve --livereload --drafts --force_polling
     ports:
       - 4000:4000
       - 35729:35729
