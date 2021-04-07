@@ -7,6 +7,10 @@
         margin: 0 auto;
         max-width: 950px;
 
+        &.last-grid {
+            padding-bottom: var(--space-xlarge);
+        }
+
         @media (max-width: 767px) {
             margin: var(--space-small);
         }
