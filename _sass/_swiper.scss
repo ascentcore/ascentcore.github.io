@@ -1,0 +1,76 @@
+.swiper-container {
+    height: 600px;
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        font-size: var(--text-medium-titles);
+        color: var(--color-white);
+        &__01 {
+            background-image: linear-gradient(150deg, rgba(64, 61, 155, 0.8015581232492998) 36%, rgba(243, 78, 53, 0.8015581232492998) 100%), url("https://images.unsplash.com/photo-1485628390555-1a7bd503f9fe?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80");
+        }
+        &__02 {
+            background-image: linear-gradient(153deg, rgba(64, 61, 155, 0.8015581232492998) 30%, rgba(255, 255, 255, 0) 100%), url(../assets/images/backgrounds/Home_banner02.png);
+        }
+        &__03 {
+            background-image: linear-gradient(153deg, rgba(243, 78, 53, 0.8015581232492998) 30%, rgba(255, 255, 255, 0) 100%), url(../assets/images/backgrounds/Home_banner01.png);
+        }
+        &__button {
+            border: 1px solid var(--color-white);
+            padding: var(--space-xsmall) var(--space-large);
+            margin-top: var(--space-small);
+            font-size: var(--text-large);
+            font-weight: bold;
+            border-radius: 10px;
+            color: var(--color-white);
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            &::after {
+                font-family: "Font Awesome 5 Free";
+                content: "\f054";
+                color: var(--color-white);
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+        }
+        .container {
+            width: 100%;
+        }
+        .up-title {
+            margin: 0;
+            font-size: var(--text-small-titles);
+        }
+        .swiper-slide__title {
+            margin: 0;
+            font-size: var(--text-big-titles);
+            max-width: 680px;
+            span {
+                color: var(--color-orange);
+            }
+        }
+        p {
+            font-size: var(--text-small);
+            font-weight: 100;
+            .fa-circle {
+                color: var(--color-orange);
+                padding: 0 var(--space-xxsmall);
+                font-size: 6px;
+                position: relative;
+                top: -2px;
+            }
+        }
+    }
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            border: 1px solid var(--color-white);
+            background: rgba(255, 255, 255, 0);
+            opacity: 1;
+            &.swiper-pagination-bullet-active {
+                background: var(--color-white);
+            }
+        }
+    }
+}
