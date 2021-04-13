@@ -3,6 +3,7 @@ layout: post
 img: assets/images/articles/json-schema.png
 title:  "React Schema Form Library"
 description: "Form generation library and validation based on JSON schema for React"
+excerpt: "Form generation library and validation based on JSON"
 author: corina
 ---
 

@@ -19,3 +19,36 @@
         </div>
     </div>
 </section>
+
+<!-- Recent Project  -->
+
+<section class="recent-projects">
+    <div class="container">
+        <h3 class="recent-project__title">Recent Projects</h3>
+    </div>
+    <div class="container">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                {% for post in site.posts %}
+                <div class="swiper-slide">
+                    <a href="{{ site.baseurl }}{{post.url}}">
+                        <img class="recent-project__image" style='background-image: url("{{post.img}}");' />
+                    </a>
+                    <div class="recent-project__wrapper">
+                        <a href="{{ site.baseurl }}{{post.url}}">
+                            <h4 class="recent-project__article-title">{{ post.title }}</h4>
+                        </a>
+                        <p class="recent-project__article-description">{{ post.excerpt }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>

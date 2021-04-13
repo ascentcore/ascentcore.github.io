@@ -1,11 +1,10 @@
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/vendor/modernizr-3.11.2.min.js?v={{site.version}}"></script>
 <script src="{{ site.baseurl }}/assets/js/main.js?v={{site.version}}"></script>
 
-<!-- Initialize Swiper -->
+<!-- Initialize Swiper Homepage -->
 <script>
-    const swiper = new Swiper('.swiper-container', {
+    const swiperHomepage = new Swiper('.carousel-homepage .swiper-container', {
         slidesPerView: 1,
         loop: true,
         speed: 1000,
@@ -18,5 +17,27 @@
         renderBullet: function(index, bullets) {
             return '<span className="' + bullets + '">' + (index + 1) + '</span>';
         }
+    });
+</script>
+
+<script>
+    const swiperRecentProject = new Swiper('.recent-projects .swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        breakpoints: {
+            980: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+            },
+            981: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     });
 </script>

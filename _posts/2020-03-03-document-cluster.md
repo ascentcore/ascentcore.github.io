@@ -3,6 +3,7 @@ layout: post
 img: assets/images/articles/docu-cluster.png
 title:  "Document Clustering"
 description: "Unsupervised document clustering technique"
+excerpt: "Unsupervised document clustering technique"
 author: sara
 ---
 
