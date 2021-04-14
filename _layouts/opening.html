@@ -47,7 +47,7 @@ excerpt: Best quality. No trade-offs.
           </h3>
           <ul class="job-details__list">
             {% for desc in section limit 1%} {% assign items = desc[1] | split:
-            "," %} {% for item in items %}
+            "/" %} {% for item in items %}
             <li>
               <span class="job-details__icon"><i class="fa fa-check"></i></span
               >{{item}}
