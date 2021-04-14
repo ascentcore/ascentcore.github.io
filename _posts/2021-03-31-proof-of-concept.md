@@ -6,6 +6,7 @@ description: "Convincing investors and even consumers to support an idea or a pr
 than just optimism and blind trust. You need clear evidence that the idea you’re proposing is
 feasible, viable, and has a great chance of success. That’s where you need a proof of concept
 (PoC)."
+excerpt: "Convincing investors and even consumers to support"
 ---
 
 # Proof of Concept

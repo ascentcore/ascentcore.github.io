@@ -185,7 +185,7 @@
 }
 
 
-/* --- AC Labs Style --- */
+/* --- AscentCore Labs Style --- */
 
 .ac-labs {
     margin: var(--space-large) 0;
@@ -200,6 +200,9 @@
             font-size: var(--text-large);
             padding: 0 var(--space-large) 0 0;
             box-sizing: border-box;
+            @media (max-width: 980px) {
+                width: 100%;
+            }
             .labs__title {
                 font-size: var(--text-medium-titles);
                 color: var(--color-blue);
@@ -216,6 +219,9 @@
                 border-radius: 10px;
                 color: var(--color-orange);
                 text-decoration: none;
+                @media (max-width: 980px) {
+                    padding: var(--space-xsmall) var(--space-small);
+                }
             }
         }
         .labs__images {
@@ -223,6 +229,9 @@
             width: 50%;
             padding-left: var(--space-large);
             box-sizing: border-box;
+            @media (max-width: 980px) {
+                display: none;
+            }
             img {
                 width: 100%;
                 margin: 0 0 var(--space-small) 0;
@@ -246,6 +255,70 @@
                 position: absolute;
                 bottom: 0;
                 left: 10px;
+            }
+        }
+    }
+}
+
+
+/* --- Recent Projects Style --- */
+
+.recent-projects {
+    padding: var(--space-xlarge) 0 0 0;
+    .container {
+        &:nth-child(2) {
+            padding: 0 var(--space-xlarge);
+            @media (max-width: 980px) {
+                padding: 0 var(--space-large);
+            }
+        }
+    }
+    .recent-project__title {
+        color: var(--color-blue);
+    }
+    .swiper-container {
+        .swiper-wrapper {
+            .swiper-slide {
+                position: relative;
+                margin-bottom: var(--space-xsmall);
+                box-sizing: border-box;
+                background-color: var(--color-light-gray);
+                box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.10);
+                .recent-project__image {
+                    width: 100%;
+                    height: 150px;
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    background-size: cover;
+                }
+                .recent-project__wrapper {
+                    padding: 5px var(--space-xsmall);
+                    .recent-project__article-title {
+                        font-size: 20px;
+                        padding: 0;
+                        margin: 0 0 var(--space-xxsmall) 0;
+                        color: #7a7a7a;
+                        min-height: 85px;
+                        @media (max-width: 980px) {
+                            min-height: initial;
+                        }
+                    }
+                    .recent-project__article-description {
+                        line-height: 1.5;
+                        padding: 0;
+                        margin: 0 0 var(--space-small) 0;
+                        color: #7a7a7a;
+                        font-weight: 100;
+                    }
+                    .recent-project__link {
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: var(--color-blue);
+                        border-bottom: 2px solid var(--color-orange);
+                        padding-bottom: var(--space-xxxsmall);
+                        display: inline-block;
+                    }
+                }
             }
         }
     }
