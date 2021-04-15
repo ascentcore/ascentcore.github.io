@@ -22,7 +22,7 @@ requirements:
 
 
 extra:
-    - Working knowledge of existing tools: Xcode, Swift, Objective C, React Native, Git, Firebase, Stripe, Facebook SDK, Google SDK
-    - Social skills: Proven success in contributing to a team-oriented environment and ability to work creatively in a problem-solving environment, Good communication skills and fluency in English (written and oral), Identify opportunities for process improvement and make constructive suggestions for change, Maintain a direct relationship with the client, Keep up-to-date with developing technologies and showcase them in your work, Quick learner with an ambitious and results driven personality
+    - Working knowledge of existing tools: Xcode / Swift / Objective C / React Native / Git / Firebase / Stripe / Facebook SDK / Google SDK
+    - Social skills: Proven success in contributing to a team-oriented environment and ability to work creatively in a problem-solving environment / Good communication skills and fluency in English (written and oral) / Identify opportunities for process improvement and make constructive suggestions for change / Maintain a direct relationship with the client / Keep up-to-date with developing technologies and showcase them in your work / Quick learner with an ambitious and results driven personality
     - Way of working: Agile
 ---

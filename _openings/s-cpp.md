@@ -19,7 +19,7 @@ requirements:
 
 extra:
 
-    - Working knowledge of existing tools: Jira (Defect management), Github (Configuration Management), CLion or similar (Integrated Developer Environment), Linux Virtual Machine,Jenkins, Charles Proxy (IP logging tool)
-    - Social skills: Good English communication skills both written and verbal, Detail-oriented, Able to work both independently and within a team environment
+    - Working knowledge of existing tools: Jira (Defect management) / Github (Configuration Management) / CLion or similar (Integrated Developer Environment) / Linux Virtual Machine,Jenkins / Charles Proxy (IP logging tool)
+    - Social skills: Good English communication skills both written and verbal / Detail-oriented / Able to work both independently and within a team environment
     - Way of working: Agile
 ---
