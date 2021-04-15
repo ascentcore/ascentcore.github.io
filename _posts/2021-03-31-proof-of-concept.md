@@ -44,4 +44,4 @@ Both of these problems are reconciled by building a PoC and subsequently showing
 
 Your idea has the potential to change any industry as long as it is deemed feasible and profitable. That can only be achieved after proving that the concept works. It is essentially the first step to the realization of an idea into a viable solution.
 
-Ascentcore will help you develop a proof of concept and then turn it into world-class digital product for your business. We partner with you to provide end-to-end [product development services](https://www.ascentcore.com/) that empower your business to reach its goals. Learn more about the solutions we offer by contacting us today.
+AscentCore will help you develop a proof of concept and then turn it into world-class digital product for your business. We partner with you to provide end-to-end [product development services](https://www.ascentcore.com/) that empower your business to reach its goals. Learn more about the solutions we offer by contacting us today.

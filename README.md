@@ -1,4 +1,4 @@
-# Ascentcore Website
+# AscentCore
 
 ### See the live site at [ascentcore.com](https://ascentcore.com)!
 
