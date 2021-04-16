@@ -6,57 +6,47 @@
         justify-content: space-between;
         margin: 0 auto;
         max-width: 950px;
-
         &.last-grid {
             padding-bottom: var(--space-xlarge);
         }
-
         @media (max-width: 767px) {
             margin: var(--space-small);
         }
-
         .grid-item {
             @media (max-width: 767px) {
                 width: 100%;
                 padding: var(--space-small);
             }
-
             width: 25%;
             max-width: 400px;
             padding: 20px;
             text-align: center;
             margin: 0 auto;
-
-            h3, div {
+            h3,
+            div {
                 text-align: left;
             }
-
             img {
                 width: 100px;
                 margin: 0 auto;
             }
         }
     }
-
     .content-container {
         display: flex;
         flex-direction: row-reverse;
-
         @media (max-width: 767px) {
             flex-direction: column;
         }
-
         .content {
             position: relative;
             clear: both;
             width: 60%;
             padding-left: 100px;
-
             @media (max-width: 767px) {
                 max-width: 100%;
                 padding-left: 10px;
             }
-
             ul {
                 border-left: 1px solid var(--color-orange);
                 padding-left: var(--space-small);
@@ -67,28 +57,24 @@
             }
         }
     }
-
     /* Hero section */
     .services-hero {
         position: relative;
         padding: var(--space-xlarge) 0 var(--space-xlarge);
         background-color: var(--color-blue);
     }
-
     .services-hero__title {
         font-size: var(--text-big-titles);
         color: var(--color-white-blue);
         padding: 0;
         margin: 0 0 var(--space-xsmall) 0;
     }
-
     .services-hero__description {
         color: var(--color-white-blue);
         font-size: var(--text-large);
         padding: 0;
         margin: 0;
     }
-
     .services-hero__image {
         position: absolute;
         width: 100%;
@@ -101,7 +87,6 @@
         background-position: center center;
         background-attachment: fixed;
     }
-
     @media (max-width: 1120px) {
         .services-hero__image {
             background-size: cover;
@@ -109,7 +94,6 @@
             background-attachment: scroll;
         }
     }
-
     /* Tabs */
     .tabs--service-page {
         z-index: 1;
@@ -118,7 +102,6 @@
         bottom: calc((var(--space-medium)) * -1);
         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     }
-
     @media (max-width: 525px) {
         .tabs--service-page {
             position: relative;
@@ -126,76 +109,73 @@
             bottom: auto;
         }
     }
-
     /* Service */
     .service {
         padding: var(--space-xlarge) 0;
+        #architecture,
+        #development,
+        #ux,
+        #qa,
+        #analytics,
+        #devops,
+        #security {
+            position: relative;
+            top: -200px;
+        }
     }
-
     .service__inner {
         display: flex;
         flex-wrap: wrap;
     }
-
     .service__text {
         width: 50%;
         padding: 0 var(--space-xlarge);
         box-sizing: border-box;
     }
-
     .service__image {
         width: 50%;
         height: 250px;
     }
-
     .service .service__image {
         background-image: url('services/arch.jpg');
         background-size: cover;
         background-position: center center;
     }
-
     .service:nth-child(2) .service__image {
         background-image: url('services/development.jpg');
         background-size: cover;
         background-position: center center;
     }
-
     .service:nth-child(3) .service__image {
         background-image: url('services/ux.jpeg');
         background-size: cover;
         background-position: center center;
     }
-
     .service:nth-child(4) .service__image {
         background-image: url('services/qa.jpg');
         background-size: cover;
         background-position: center center;
     }
-
     .service:nth-child(5) .service__image {
         background-image: url('services/analytics.jpg');
         background-size: cover;
         background-position: center center;
     }
-
     .service:nth-child(6) .service__image {
         background-image: url('services/devops.jpg');
         background-size: cover;
         background-position: center center;
     }
-
     .service:nth-child(7) .service__image {
         background-image: url('services/security.jpg');
         background-size: cover;
         background-position: center center;
     }
-
     .service:nth-child(8) .service__image {
         background-image: url('services/security.jpg');
         background-size: cover;
         background-position: center center;
     }
-
     .service__name {
         font-size: var(--text-medium-titles);
         padding: 0;
@@ -208,12 +188,10 @@
             border-bottom: 4px solid var(--color-orange);
         }
     }
-
     .service__description {
         margin: 0 0 var(--space-large) 0;
         line-height: 1.6;
     }
-
     .service__link {
         font-weight: bold;
         text-decoration: none;
@@ -222,10 +200,8 @@
         padding-bottom: var(--space-xxxsmall);
         display: inline-block;
     }
-
     .service--colored {
         background: var(--color-light-gray);
-
         .container {
             .service__name {
                 &:after {
@@ -237,18 +213,15 @@
             }
         }
     }
-
     @media (max-width: 767px) {
         .service__inner {
             flex-direction: column-reverse;
         }
-
         .service__text,
         .service__image {
             width: 100%;
             padding: 0;
         }
-
         .service__image {
             margin-bottom: var(--space-small);
         }
