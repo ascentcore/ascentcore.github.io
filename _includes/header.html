@@ -1,36 +1,35 @@
 <!-- HEADER -->
 <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
+<noscript>
+  <iframe
     src="https://www.googletagmanager.com/ns.html?id=GTM-NSHFZHK"
     height="0"
     width="0"
     style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
+  ></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
 <header class="header">
   <div class="container">
     <div class="header__inner">
-      <a href="{{ site.baseurl }}/index.html" class="header__logo"
-        >ASCENTCORE</a
-      >
+      <a href="{{ site.baseurl }}/" class="header__logo">ASCENTCORE</a>
       <nav class="header__nav">
-        <ul>
-          {% for nav in site.data.navigation %}
-          <a
-            href="{{ site.baseurl }}/{{ nav.url }}"
-            class="header__link {% if nav.url == page.url %}header__link--active{% endif %}"
-            >{{ nav.text }}</a
-          >
-          {% endfor %}
-        </ul>
+<!--        <ul>-->
+        {% for nav in site.data.navigation %}
+          {%- if nav.external -%}
+            <a href="{{ nav.url }}" class="header__link" target="_blank">{{ nav.text }}</a>
+          {%- else- %}
+            {%- assign url = site.baseurl | append: nav.url -%}
+            {%- assign active = "" -%}
+            {%- if nav.url == page.url -%}
+              {%- assign active = "header__link--active" -%}
+            {%- endif -%}
+            <a href="{{ url }}" class="header__link {{ active }}">{{ nav.text }}</a>
+          {%- endif -%}
+        {% endfor %}
+<!--        </ul>-->
       </nav>
-      <div
-        class="header__menu-trigger"
-        id="menuTrigger"
-        onclick="handleMenuTrigger()"
-      >
+      <div class="header__menu-trigger" id="menuTrigger" onclick="handleMenuTrigger()">
         <div class="header__trigger-line"></div>
         <div class="header__trigger-line"></div>
         <div class="header__trigger-line"></div>
@@ -44,15 +43,16 @@
     <div class="mobile-menu__close-line"></div>
     <div class="mobile-menu__close-line"></div>
   </div>
+
   <ul>
+    {% for nav in site.data.navigation %}
     <li>
-      {% for nav in site.data.navigation %}
-      <a
-        href="{{ site.baseurl }}/{{ nav.url }}"
-        class="mobile-menu__link {% if nav.url == page.url %}mobile-menu__link--active{% endif %}"
-        >{{ nav.text }}</a
-      >
-      {% endfor %}
+      {%- if nav.external -%}
+        <a href="{{ nav.url }}" class="mobile-menu__link" target="_blank">{{ nav.text }}</a>
+      {%- else- %}
+        <a href="{{ site.baseurl }}{{ nav.url }}" class="mobile-menu__link">{{ nav.text }}</a>
+      {%- endif -%}
     </li>
+    {% endfor %}
   </ul>
 </nav>

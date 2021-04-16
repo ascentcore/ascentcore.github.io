@@ -1,18 +1,18 @@
 - text: Services
-  url: services.html
+  url: /services.html
 
 - text: Our Work
-  url: work.html
+  url: /work.html
 
 - text: About Us
-  url: about.html
-
+  url: /about.html
 
 - text: Insights
-  url: insights.html
+  url: /insights.html
 
 - text: Careers
-  url: careers.html
+  external: yes
+  url: https://ascentcoreaccount.bamboohr.com/jobs/
 
 - text: Contact
-  url: contact.html
+  url: /contact.html

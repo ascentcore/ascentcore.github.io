@@ -1,5 +1,5 @@
 # Site settings
-title: Ascentcore Website
+title: AscentCore
 tagline: "Best quality. No trade-offs."
 url: "http://ascentcore.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
 version: 0.0.1
@@ -53,7 +53,7 @@ defaults:
 authors:
   sara:
     name: Sara
-    description: Machine Learning / Fullstack Engineer as part of the Ascentcore Research Lab team
+    description: Machine Learning / Fullstack Engineer as part of the AscentCore Research Lab team
   corina:
     name: Corina
-    description: Senior Fullstack engineer as part of the Ascentcore Frontend Development team
+    description: Senior Fullstack engineer as part of the AscentCore Frontend Development team
