@@ -1,68 +1,83 @@
 <!-- HERO SECTION -->
 <section class="contact-hero">
-  <div class="container">
-    <h1 class="contact-hero__title">Contact us</h1>
-    <p class="contact-hero__description">
-      Send us a message and let us know how we can help.
-    </p>
-  </div>
-  <div class="contact-hero__image"></div>
+    <div class="container">
+        <h1 class="contact-hero__title">Contact us</h1>
+        <p class="contact-hero__description">
+            Send us a message and let us know how we can help.
+        </p>
+    </div>
+    <div class="contact-hero__image"></div>
 </section>
 
 <!-- CONTACT FORM -->
 <section class="contact-form">
-  <div class="container">
-    <div class="contact-form-title">Let's Get Started 
-      <small>(703) 867-5055 | contact@ascentcore.com</small>
-    </div>
-    <form
-      class="contact-form__inner"
-      action="https://formspree.io/f/mbjzydzp"
-      method="POST"
-    >
-    <div class="contact-form__group">
-      <label>
-          Your email: <input type="email" name="_replyto" />
-      </label>
-    </div>
-    <div class="contact-form__group">
-      <label>
-          Your phone: <input type="text" name="phone" />
-      </label>
-    </div>
-    <div class="contact-form__group">
-      <label>
-        Your message:
-        <textarea name="message" rows="10"></textarea>
-      </label>
-    </div>
+    <div class="container">
+        <div class="contact-form__title">Let's Get Started
+            <small>(703) 867-5055 | contact@ascentcore.com</small>
+        </div>
+        <div class="contact-form__wrapper">
+            <form class="contact-form__inner" action="https://formspree.io/f/mbjzydzp" method="POST">
+                <div class="contact-form__group">
+                    <div class="contact-form__field"><input type="text" name="name" placeholder="Name" /></div>
+                    <div class="contact-form__field"><input type="text" name="company" placeholder="Company" /></div>
+                    <div class="contact-form__field"><input type="email" name="_replyto" placeholder="Email" /></div>
+                    <div class="contact-form__field"><input type="text" name="phone" placeholder="Phone" /></div>
+                    <div class="contact-form__textarea"><textarea name="message" rows="1" placeholder="Tell us about your project"></textarea></div>
+                </div>
 
-      <!-- your other form fields go here -->
+                <!-- your other form fields go here -->
 
-      <button class="contact-form__submit" type="submit">Send</button>
-    </form>
-
+                <div class="contact-form__button">
+                    <button class="contact-form__submit" type="submit">Submit</button>
+                </div>
+            </form>
+            <div class="schedule-call">
+                <h3>Schedule a call now</h3>
+                <p>Use our automated scheduling tool to setup a conversation with our engineering team.</p>
+                <a href="#" class="schedule-call__button">Scheduling tool</a>
+            </div>
+        </div>
 </section>
+
+<!-- OTHER WAYS TO GET STARTED -->
+<section class="other-ways">
+    <div class="container">
+        <h2>Other ways to get started</h2>
+        <div class="other-ways__wrapper">
+            <div class="other-ways__column">
+                <h3>Technical Assessment</h3>
+                <p>Before developing an existing product, a detailed assessment may be recommended in order to evaluate product performance in relation to its essential characteristics.</p>
+                <a href="#" class="other-ways__start">Start a conversation</a>
+            </div>
+            <div class="other-ways__column">
+                <h3>Risk Analysis</h3>
+                <p>Our expert team can help you identify risks and their triggers, classify and prioritize all risks, and implement mitigating action if any risk materializes.</p>
+                <a href="#" class="other-ways__start">Start a conversation</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!-- LOCATION -->
 <section class="contact-locations">
-  <div class="container">
-    <h2>Our locations </h2>
-    <div class="contact-locations__inner">
-      <div class="contact-locations__item">
-        <!-- <div class="contact-locations__image--reston"></div> -->
-        <h3>Reston</h3>
-        <p>1284 Auburn Grove Ln, Suite 100</p>
-        <p>Reston, VA 20194, USA</p>
-        <a href="mailto:contact@ascentcore.com">contact@ascentcore.com</a>
-      </div>
-      <div class="contact-locations__item">
-        <!-- <div class="contact-locations__image--cluj"></div> -->
-        <h3>Cluj-Napoca</h3>
-        <p>Nicolae Draganu Nr.4</p>
-        <p>Jud. Cluj, Romania</p>
-        <a href="mailto:contact@ascentcore.com">contact@ascentcore.com</a>
-      </div>
+    <div class="container">
+        <h2>Our locations </h2>
+        <div class="contact-locations__inner">
+            <div class="contact-locations__item">
+                <!-- <div class="contact-locations__image--reston"></div> -->
+                <h3>Reston</h3>
+                <p>1284 Auburn Grove Ln, Suite 100</p>
+                <p>Reston, VA 20194, USA</p>
+                <a href="mailto:contact@ascentcore.com">contact@ascentcore.com</a>
+            </div>
+            <div class="contact-locations__item">
+                <!-- <div class="contact-locations__image--cluj"></div> -->
+                <h3>Cluj-Napoca</h3>
+                <p>Nicolae Draganu Nr.4</p>
+                <p>Jud. Cluj, Romania</p>
+                <a href="mailto:contact@ascentcore.com">contact@ascentcore.com</a>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
