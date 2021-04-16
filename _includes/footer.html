@@ -25,35 +25,17 @@
         <nav class="footer__nav">
           <ul>
             <li>
-              <a href="{{ site.baseurl }}/index.html" class="footer__navlink"
-                >Home</a
-              >
+              <a href="{{ site.baseurl }}" class="footer__navlink">Home</a>
             </li>
+            {% for nav in site.data.navigation %}
             <li>
-              <a href="{{ site.baseurl }}/about.html" class="footer__navlink"
-                >About</a
-              >
+              {%- if nav.external -%}
+                <a href="{{ nav.url }}" class="footer__navlink" target="_blank">{{ nav.text }}</a>
+              {%- else- %}
+                <a href="{{ site.baseurl }}{{ nav.url }}" class="footer__navlink">{{ nav.text }}</a>
+              {%- endif -%}
             </li>
-            <li>
-              <a href="{{ site.baseurl }}/services.html" class="footer__navlink"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a href="{{ site.baseurl }}/work.html" class="footer__navlink"
-                >Work</a
-              >
-            </li>
-            <li>
-              <a href="{{ site.baseurl }}/careers.html" class="footer__navlink"
-                >Careers</a
-              >
-            </li>
-            <li>
-              <a href="{{ site.baseurl }}/contact.html" class="footer__navlink"
-                >Contact</a
-              >
-            </li>
+            {% endfor %}
           </ul>
         </nav>
         <div class="footer__grid">
