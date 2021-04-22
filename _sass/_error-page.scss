@@ -1,0 +1,39 @@
+/* --------------------- 404 Error Page styles --------------------- */
+
+.page-404 {
+    background-color: var(--color-light-gray);
+    padding: var(--space-large) 0;
+    position: relative;
+    .page-404__title {
+        text-align: center;
+        padding-bottom: var(--space-medium);
+        h1, h2 {
+            color: var(--color-blue);
+        }
+    }
+    .page-404__description {
+        padding: var(--space-xsmall) 0;
+        h4 {
+            margin: 0;
+        }
+        ul {
+            list-style-type: disc;
+            li {
+                line-height: 1.7;
+            }
+        }
+    }
+    &::after {
+        content: "A";
+        position: absolute;
+        color: var(--color-blue);
+        font-weight: bold;
+        opacity: 0.02;
+        font-size: 72em;
+        top: -520px;
+        left: -200px;
+        @media (max-width: 700px) {
+            display: none;
+        }
+    }
+}
