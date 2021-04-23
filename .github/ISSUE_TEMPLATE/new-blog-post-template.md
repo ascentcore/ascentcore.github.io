@@ -9,18 +9,16 @@ assignees: ''
 
 ## Why
 
-We want to publish a new blog post on our website
+We want to publish a new blog post on our website.
 
 ## What
 - [ ] Check if the links to the doc and to the picture work and are accessible
 - [ ] Check the quality of the picture (high resolution, jpg) 
 - [ ] Create the markdown file for the post with an SEO friendly name
 
-
-
 ## Article details
 
-- <link to the spash image for the blog post>
+- <link to the splash image for the blog post>
 - <optional: link to the google docs with the content>
 
 ---
