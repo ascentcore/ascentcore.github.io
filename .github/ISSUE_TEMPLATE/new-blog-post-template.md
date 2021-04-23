@@ -1,7 +1,7 @@
 ---
 name: New blog post template
-about: Describe this issue template's purpose here.
-title: ''
+about: Template for the issue that will describe a new blog post
+title: 'New blog post: [Add title here]'
 labels: ''
 assignees: ''
 
