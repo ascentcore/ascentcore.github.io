@@ -1,6 +1,6 @@
 ---
 layout: post
-img: assets/images/articles/proof-of-concept.png
+img: assets/images/articles/proof-of-concept.jpg
 title: "Proof of Concept: An Important Step Zero For Product Success"
 description: "Convincing investors and even consumers to support an idea or a project requires much more
 than just optimism and blind trust. You need clear evidence that the idea you’re proposing is
