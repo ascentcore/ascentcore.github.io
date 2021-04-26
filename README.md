@@ -44,3 +44,26 @@ This is not the recommended development setup, but if you want to do it, a Gemfi
 ## Publishing
 
 GitHub Pages uses the configured branch to serve the content. After you push a change to the website into master, we can open a PR to merge `master` to the publishing branch.  
+
+## Steps for creating blog post
+
+1. Marketing creates a new issue in GitHub for the new post
+   - Using "New issue"
+   - Then "New blog post template"
+   - Enter a title in the "New blog post [Add title here]" field
+   - Enter the links for the image and content
+   - Enter the title and short description inside the quotation marks
+   - Enter the blog content of the post
+      - We use "#" to mark a title
+      - We use "##" to mark a subtitle
+      - We use "*" for unorder list
+      - We use "-" for order list
+
+2. The developer will ask when the post needs to be published and will schedule the issue accordingly: The developer will prioritize the issue depending on the urgency.
+
+3. The developer will follow the Git Development Flow
+   - In the "_posts" folder a new .md file is created with the title established with Marketing
+   - Fill in "layout", "img", "title", "description"
+   - Copying content received from Marketing
+
+4. The developer will publish the changes live.
