@@ -43,4 +43,31 @@ This is not the recommended development setup, but if you want to do it, a Gemfi
 
 ## Publishing
 
-GitHub Pages uses the configured branch to serve the content. After you push a change to the website into master, we can open a PR to merge `master` to the publishing branch.  
+GitHub Pages uses the configured branch to serve the content. After you push a change to the website into master, we can open a PR to merge `master` to the publishing branch. 
+
+### Steps
+
+1. Checkout branch `master` and pull the latest changes.  
+   ```bash
+   git checkout master
+   git pull --rebase -p
+   ```
+1. Review the changes locally and make sure the site works: 
+   - the CSS renders correctly on all pages: header, footer, homepage looks as expected
+   - the blog posts are all there
+   - the homepage slider works
+   - there are no errors in the console
+   - open each page from the main menu and check if it renders as expected
+1. If any issues were discovered during the previous step, create new issues to correct them and abandon the publishing process at this step. Else, proceed further.
+1. Checkout the `live-website` branch and pull the latest changes:  
+   ```bash
+   git checkout live-website
+   git pull 
+   ```
+1. Merge the `master` branch and push chnages to remote:  
+   ```bash
+   git merge master
+   git push
+   ```
+1. After a few minutes, verify the live website at https://ascentcore.com to see if the changes were published.
+1. Notify the stakeholders on Slack the new changes were published.
