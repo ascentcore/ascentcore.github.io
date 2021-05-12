@@ -30,19 +30,39 @@
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                {% for post in site.posts %}
                 <div class="swiper-slide">
-                    <a href="{{ site.baseurl }}{{post.url}}">
-                        <img class="recent-project__image" style='background-image: url("{{post.img}}");' />
+                    <a href="/pages/showcase.html">
+                        <img class="recent-project__image" style='background-image: url("/assets/images/articles/attack-prediction.png");' />
                     </a>
                     <div class="recent-project__wrapper">
-                        <a href="{{ site.baseurl }}{{post.url}}">
-                            <h4 class="recent-project__article-title">{{ post.title }}</h4>
+                        <a href="/pages/showcase.html">
+                            <h4 class="recent-project__article-title">Real-Time Attack Prediction</h4>
                         </a>
-                        <p class="recent-project__article-description">{{ post.excerpt }}</p>
+                        <p class="recent-project__article-description">Realtime attack prediction based on packet analysis using pre-trained neural net</p>
                     </div>
                 </div>
-                {% endfor %}
+                <div class="swiper-slide">
+                    <a href="/2020/03/03/react-schema-form.html">
+                        <img class="recent-project__image" style='background-image: url("/assets/images/articles/json-schema.png");' />
+                    </a>
+                    <div class="recent-project__wrapper">
+                        <a href="/2020/03/03/react-schema-form.html">
+                            <h4 class="recent-project__article-title">React Schema Form Library</h4>
+                        </a>
+                        <p class="recent-project__article-description">Form generation library and validation based on JSON schema for React</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/pages/pandemic.html">
+                        <img class="recent-project__image" style='background-image: url("/assets/images/articles/pandemic.png");' />
+                    </a>
+                    <div class="recent-project__wrapper">
+                        <a href="/pages/pandemic.html">
+                            <h4 class="recent-project__article-title">Pandemic Simulator</h4>
+                        </a>
+                        <p class="recent-project__article-description">Part of COVID-19 Challenge</p>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Add Arrows -->
