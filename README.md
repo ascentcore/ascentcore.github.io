@@ -38,9 +38,58 @@ The docker-compose will run the Jekyll image and map the current folder as a vol
 
 ### Install and Run (not recommended)
 
-This is not the recommended development setup, but if you want to do it, a Gemfile is available in the repo. Follow the instruction from [Jekyll] website(https://jekyllrb.com/) 
-
+This is not the recommended development setup, but if you want to do it, a Gemfile is available in the repo. Follow the instruction from [Jekyll] website(https://jekyllrb.com/)
 
 ## Publishing
 
-GitHub Pages uses the configured branch to serve the content. After you push a change to the website into master, we can open a PR to merge `master` to the publishing branch.  
+GitHub Pages uses the configured branch to serve the content. After you push a change to the website into master, we can open a PR to merge `master` to the publishing branch. 
+
+### Steps
+
+1. Checkout branch `master` and pull the latest changes.  
+   ```bash
+   git checkout master
+   git pull --rebase -p
+   ```
+1. Review the changes locally and make sure the site works: 
+   - the CSS renders correctly on all pages: header, footer, homepage looks as expected
+   - the blog posts are all there
+   - the homepage slider works
+   - there are no errors in the console
+   - open each page from the main menu and check if it renders as expected
+1. If any issues were discovered during the previous step, create new issues to correct them and abandon the publishing process at this step. Else, proceed further.
+1. Checkout the `live-website` branch and pull the latest changes:  
+   ```bash
+   git checkout live-website
+   git pull 
+   ```
+1. Merge the `master` branch and push chnages to remote:  
+   ```bash
+   git merge master
+   git push
+   ```
+1. After a few minutes, verify the live website at https://ascentcore.com to see if the changes were published.
+1. Notify the stakeholders on Slack the new changes were published.
+
+## Creating a blog post
+
+1. Marketing creates a new issue in GitHub for the new post
+   - Using "New issue"
+   - Then "New blog post template"
+   - Enter a title in the "New blog post [Add title here]" field
+   - Enter the links for the image and content
+   - Enter the title and short description inside the quotation marks
+   - Enter the blog content of the post
+      - We use "#" to mark a title
+      - We use "##" to mark a subtitle
+      - We use "*" for unorder list
+      - We use "-" for order list
+
+2. The developer will ask when the post needs to be published and will schedule the issue accordingly: The developer will prioritize the issue depending on the urgency.
+
+3. The developer will follow the Git Development Flow
+   - In the "_posts" folder a new .md file is created with the title established with Marketing
+   - Fill in "layout", "img", "title", "description"
+   - Copying content received from Marketing
+
+4. The developer will publish the changes live.
