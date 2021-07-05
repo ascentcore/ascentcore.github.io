@@ -2,7 +2,7 @@
 layout: post
 img: assets/images/articles/ASC016-turn-prospects-Into-software-sales-leads-by-influencing-buyer-behavior.jpg
 title: "Turn Prospects Into Software Sales Leads by Influencing Buyer Behavior"
-description: "WA new generation of buyers has emerged and it is changing the landscape for how we sell software. As such, it's important to develop a digital sales solution that will adapt to this new buying behavior in order to give your prospects what they want when they need it most - at just the right time."
+description: "A new generation of buyers has emerged and it is changing the landscape for how we sell software. As such, it's important to develop a digital sales solution that will adapt to this new buying behavior in order to give your prospects what they want when they need it most - at just the right time."
 ---
 
 # Turn Prospects Into Software Sales Leads by Influencing Buyer Behavior
