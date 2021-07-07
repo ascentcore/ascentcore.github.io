@@ -1,0 +1,25 @@
+.page {
+    /* --------------------- Simple page styles --------------------- */
+    /* Hero section */
+    .page-hero {
+        position: relative;
+        padding: var(--space-small) 0;
+        background-color: var(--color-white-blue);
+    }
+    .page-hero__title {
+        font-size: var(--text-big-titles);
+        color: var(--color-blue);
+        padding: 0;
+    }
+    /* content section */
+    .page-content {
+        border-bottom: 1px solid var(--color-light-gray);
+        padding: var(--space-large) 0;
+
+        ol {
+            list-style: decimal;
+        }
+    }
+
+
+}
