@@ -1,0 +1,47 @@
+.page {
+    /* --------------------- Simple page styles --------------------- */
+    /* Hero section */
+    .page-hero {
+        position: relative;
+        padding: var(--space-small) 0;
+        background-color: var(--color-white-blue);
+    }
+    .page-hero__title {
+        font-size: var(--text-big-titles);
+        color: var(--color-blue);
+        padding: 0;
+    }
+    /* content section */
+    .page-content {
+        border-bottom: 1px solid var(--color-light-gray);
+        padding: var(--space-large) 0;
+
+        ol {
+            list-style: decimal;
+        }
+        ul {
+            list-style: disc;
+        }
+
+        table {
+            border: 1px solid var(--color-medium-gray);
+            border-collapse: collapse;
+            margin: var(--space-medium) 0;
+
+            th, td {
+                border: 1px solid #dee2e6;
+                padding: var(--space-xxsmall);
+            }
+
+            thead {
+                th {
+                    border-bottom: 2px solid var(--color-medium-gray);
+                    text-align: left;
+                    width: 50%
+                }
+            }
+        }
+    }
+
+
+}

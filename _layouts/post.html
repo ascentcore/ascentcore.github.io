@@ -4,13 +4,12 @@
   <body>
     {% include header.html %}
     <div class="post">
-      <img
-        src='/{{page.img}}'
-      />
+      <img src='/{{page.img}}' />
       {{ post }}
       {{ content }}
       {% include author.html %}
     </div>
-    {% include footer.html %} {% include scripts.html %}
+    {% include footer.html %}
+    {% include scripts.html %}
   </body>
 </html>
