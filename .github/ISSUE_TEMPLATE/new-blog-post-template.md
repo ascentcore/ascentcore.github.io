@@ -14,6 +14,8 @@ We want to publish a new blog post on our website.
 ## What
 - [ ] Check if the links to the doc and to the picture work and are accessible
 - [ ] Check the quality of the picture (high resolution, jpg) 
+   - [ ] Compress image if necessary (use https://tinypng.com/)
+   - [ ] Name the image with a SEO friendly name (blog title words separated with hyphens)
 - [ ] Create the markdown file for the post with an SEO friendly name
 
 ## Article details
