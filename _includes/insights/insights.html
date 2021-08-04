@@ -23,7 +23,7 @@
       <div class="insights__article">
         <img
           class="insights__image"
-          style='background-image: url("{{post.img}}");'
+          style='background-image: url("{{post.insight || default: post.img}}");'
         />
         <a href="{{ site.baseurl }}{{post.url}}"><h4 class="insights__article-title">{{ post.title }}</h4></a>
         <p class="insights__article-description">{{ post.description }}</p>
