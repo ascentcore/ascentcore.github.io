@@ -1,6 +1,6 @@
 ---
 layout: post
-img: assets/images/articles/how-industry-giants-develop-innovative-audio-experiences.jpg
+img: assets/images/articles/2021-08-12-how-industry-giants-develop-innovative-audio-experiences.jpg
 title: "How Industry Giants Develop Innovative Audio Experiences"
 description: "US satellite-radio provider SiriusXM and Pandora partnered with the social networking platform TikTok to launch a new channel called TikTok Radio, the first creator-hosted radio station of its kind. This is part of their strategic partnership aimed at increasing exposure among Gen Z content consumers - an influential group who can make or break trends in pop culture today. This music channel features trending sounds that redefine the pop culture from artists on TikTok while listeners can tune into playlists curated by some of the top creators."
 ---
