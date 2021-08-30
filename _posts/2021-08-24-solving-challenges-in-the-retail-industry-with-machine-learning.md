@@ -1,8 +1,8 @@
 ---
 layout: post
-img: assets/images/articles/solving-challenges-in-the-retail-industry-with-machine-learning.jpg
+img: assets/images/articles/2021-08-24-solving-challenges-in-the-retail-industry-with-machine-learning.jpg
 title: "Solving challenges in the retail industry with Machine Learning"
-description: "Machine Learning is an invaluable tool that can help retailers to provide better customer service and increase profitability. With this technology, businesses have more power than ever before when it comes to decision making: from product recommendations based on purchase history to identifying consumer patterns and trends using predictive analytics."
+description: "Machine Learning is an invaluable tool that can help retailers to provide better customer service and increase profitability. With this technology, businesses have more power than ever before when it comes to decision-making: from product recommendations based on purchase history to identifying consumer patterns and trends using predictive analytics."
 ---
 
 # Solving challenges in the retail industry with Machine Learning
