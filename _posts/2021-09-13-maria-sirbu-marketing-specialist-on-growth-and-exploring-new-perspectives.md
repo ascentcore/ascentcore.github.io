@@ -1,6 +1,6 @@
 ---
 layout: post
-img: assets/images/articles/maria-sirbu-marketing-specialist.jpg
+img: assets/images/articles/2021-09-13-maria-sirbu-marketing-specialist.jpg
 title: "Maria Sirbu, Marketing Specialist, on Growth and Exploring New Perspectives"
 description: "What started as an Event Planner job 5 years ago, soon turned into a Marketing Manager career for our colleague Maria, who is nowadays trusted to drive the team's efforts towards creating powerful brand experiences and to support demand generation for the business."
 ---
